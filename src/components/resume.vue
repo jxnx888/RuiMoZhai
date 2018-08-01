@@ -21,7 +21,7 @@
     name: "resume",
     data() {
       return {
-        msg: 'Resume~~~~~~~~~~~~~~~',
+        msg: 'Learning',
 
         items: Store.fetch(),
         newItem:''

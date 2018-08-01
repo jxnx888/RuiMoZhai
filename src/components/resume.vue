@@ -1,5 +1,6 @@
 <template>
   <div>
+    <h1>{{msg}}</h1>
     <input v-model="newItem" v-on:keyup.enter="addNew" placeholder="enter to list items">
     <ul>
 
@@ -15,13 +16,12 @@
 
 <script>
   import Store from './../store'
-  import store from "../store";
 
    export default {
     name: "resume",
     data() {
       return {
-        msg: 'Learning',
+        msg: 'Learning \n resume.vue',
 
         items: Store.fetch(),
         newItem:''
@@ -43,7 +43,7 @@
         this.items.push({
           label:this.newItem,
           isFinished:false
-        })
+        });
         this.newItem='';
         Store.save()
         }

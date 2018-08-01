@@ -1,6 +1,8 @@
 <template>
+  <div>
   <h1>{{msg}}</h1>
-
+  <h1>{{msg1}}</h1>
+  </div>
 </template>
 
 <script>
@@ -8,7 +10,8 @@
 
     data () {
       return {
-        msg: 'Welcome to Your Vue.js App'
+        msg: 'Welcome to Your Vue.js App',
+        msg1: 'This is HelloWorld.Vue'
       }
     }
   }

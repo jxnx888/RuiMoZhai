@@ -4,6 +4,7 @@
     <HelloWorld/>
     <resume/>
     <test/>
+    <list/>
   </div>
 </template>
 
@@ -11,13 +12,15 @@
 import HelloWorld from './components/HelloWorld'
 import Resume from "./components/resume";
 import Test from "./components/test";
+import List from "./components/list";
 
 export default {
   name: 'App',
   components: {
     Resume,
     HelloWorld,
-    Test
+    Test,
+    List
   }
 }
 </script>

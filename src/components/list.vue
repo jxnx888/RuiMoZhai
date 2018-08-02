@@ -1,5 +1,15 @@
 <template>
- <p>{{msg}}</p>
+
+<div>
+  <h1>{{msg}}</h1>
+  <div v-if="show">Hello World</div>
+  <!--元素被销毁-->
+  <div v-show="show">Hello World</div>
+  <!--元素添加style display:none;-->
+
+  <button @click="handleClickToggle">toggle</button>
+</div>
+
 </template>
 
 <script>
@@ -7,8 +17,14 @@
         name: "other",
       data() {
         return {
-          msg: 'adf '
+          msg: 'This is List.Vue ',
+          show: true
         }
+      },
+      methods: {
+handleClickToggle:function () {
+  this.show = !this.show;
+}
       }
     }
 </script>

@@ -1,6 +1,6 @@
-# my-project
+# father
 
-> A Vue.js project
+> This is a website for how to write calligraphy
 
 ## Build Setup
 

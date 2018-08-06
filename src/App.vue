@@ -1,27 +1,13 @@
 <template>
   <div id="app">
     <img src="./assets/logo.png">
-    <HelloWorld/>
-    <resume/>
-    <test/>
-    <list/>
+    <router-view/>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld'
-import Resume from "./components/resume";
-import Test from "./components/test";
-import List from "./components/list";
-
 export default {
-  name: 'App',
-  components: {
-    Resume,
-    HelloWorld,
-    Test,
-    List
-  }
+  name: 'App'
 }
 </script>
 

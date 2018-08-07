@@ -1,7 +1,7 @@
 <template>
   <div class="nav">
     <router-link to="/">
-    <div class="col-sm-6" >
+    <div class="col-sm-6">
       <div class="icon">
         <img  src="http://www.ning-xin.com/Images/image1/homeIcon.png" style="width: .5rem">
       </div>
@@ -11,7 +11,7 @@
     </div>
     </router-link>
     <router-link to="/me">
-    <div  class="col-sm-6" >
+    <div  class="col-sm-6">
       <div class="icon">
         <img   src="http://www.ning-xin.com/Images/image1/meIcon.png" style="width: .5rem">
       </div>
@@ -25,7 +25,7 @@
 
 <script>
   export default {
-    name: "HomeNavigation",
+    name: "meNavigation",
     methods: {
 
     }

@@ -1,0 +1,82 @@
+{
+  "ret": true,
+  "data": {
+    "swiperList": [{
+      "id": "0001",
+      "imgUrl":"http://ning-xin.com/Images/image1/1.jpg"
+    },{
+      "id": "0002",
+      "imgUrl": "http://ning-xin.com/Images/image1/2.jpg"
+    },{
+      "id": "0003",
+      "imgUrl": "http://ning-xin.com/Images/image1/3.jpg"
+    }],
+    "iconList": [{
+      "id": "0001",
+      "imgUrl": "http://ning-xin.com/Images/image1/xingshu.png",
+      "desc": "行书"
+    }, {
+      "id": "0002",
+      "imgUrl": "http://ning-xin.com/Images/image1/kaishu.png",
+      "desc": "楷书"
+    }, {
+      "id": "0003",
+      "imgUrl": "http://ning-xin.com/Images/image1/lishu.png",
+      "desc": "隶书"
+    }, {
+      "id": "0004",
+      "imgUrl": "http://ning-xin.com/Images/image1/caoshu.png",
+      "desc": "草书"
+    }, {
+      "id": "0005",
+      "imgUrl": "http://ning-xin.com/Images/image1/zuanshu.png",
+      "desc": "篆书"
+    }, {
+      "id": "0006",
+      "imgUrl": "http://ning-xin.com/Images/image1/zuanke.png",
+      "desc": "篆刻"
+    }, {
+      "id": "0007",
+      "imgUrl": "http://ning-xin.com/Images/image1/hua.png",
+      "desc": "国画"
+    }, {
+      "id": "0008",
+      "imgUrl": "http://ning-xin.com/Images/image1/wenhua.png",
+      "desc": "文化"
+    }, {
+      "id": "0009",
+      "imgUrl": "http://ning-xin.com/Images/image1/zhanshi.png",
+      "desc": "国展"
+    }, {
+      "id": "0010",
+      "imgUrl": "http://ning-xin.com/Images/image1/ji.png",
+      "desc": "基础"
+    }],
+    "recommendList": [{
+      "id": "0001",
+      "imgUrl": "http://img1.qunarzz.com/sight/p0/1409/19/adca619faaab0898245dc4ec482b5722.jpg_140x140_80f63803.jpg",
+      "title": "宁保成老师 宁保成老师 宁保成老师 宁保成老师 宁保成老师 宁保成老师",
+      "desc": "第一课时 《草书》技法初探（共三节）"
+    }, {
+      "id": "0002",
+      "imgUrl": "http://img1.qunarzz.com/sight/p0/1511/d2/d2aec2dfc5aa771290.water.jpg_140x140_abb362a7.jpg",
+      "title": "宁保成老师 宁保成老师 宁保成老师  ",
+      "desc": "第一课时 《草书》技法初探（共三节）"
+    }, {
+      "id": "0003",
+      "imgUrl": "http://img1.qunarzz.com/sight/p0/1501/f4/f467729126949c3a.water.jpg_140x140_ef235b1c.jpg",
+      "title": "宁保成老师 宁保成老师 宁保成老师 宁保成老师 宁保成老师 宁保成老师",
+      "desc": "第一课时 《草书》技法初探（共三节）"
+    }],
+    "vipList": [{
+      "id": "0001",
+      "imgUrl": "http://ning-xin.com/Images/image1/4.jpg"
+    }, {
+      "id": "0002",
+      "imgUrl": "http://ning-xin.com/Images/image1/5.jpg"
+    }, {
+      "id": "0003",
+      "imgUrl": "http://ning-xin.com/Images/image1/6.jpg"
+    }]
+  }
+}

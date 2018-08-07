@@ -9,9 +9,12 @@ import fasteClick from 'fastclick'
 import VueAwesomeSwiper from 'vue-awesome-swiper'
 import 'swiper/dist/css/swiper.css'
 
+
+
 import './assets/styles/reset.css'
 import './assets/styles/border.css'
 import './assets/styles/iconfont.css'
+// import '../node_modules/bootstrap/dist/css/bootstrap.css'
 
 
 
@@ -20,6 +23,7 @@ Vue.config.productionTip = false
 fasteClick.attach(document.body)
 // 引入轮播图插件库和css
 Vue.use(VueAwesomeSwiper)
+
 
 /* eslint-disable no-new */
 new Vue({

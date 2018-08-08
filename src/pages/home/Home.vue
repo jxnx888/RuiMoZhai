@@ -41,6 +41,7 @@
       }
     },
     methods:{
+
       getHomeInfo(){
         axios.get('/api/index.json')
           .then(this.getHomeInfoSucc)
@@ -62,6 +63,7 @@
   }
 </script>
 
-<style scoped>
-
+<style scoped lang="stylus">
+.home
+  background-color:#eee
 </style>

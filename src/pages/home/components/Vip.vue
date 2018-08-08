@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="vip">
     <div class="title">会员专区</div>
     <ul>
       <li class="item border-bottom" v-for="item of list"
@@ -9,10 +9,11 @@
         </div>
 
       </li>
-      <div class="more">
-        <span class="iconfont">&#xe6ba;查看更多</span>
-      </div>
+
     </ul>
+    <div class="more">
+      <span class="iconfont">&#xe6ba;查看更多</span>
+    </div>
   </div>
 </template>
 
@@ -27,12 +28,14 @@
 
 <style scoped lang="stylus">
   @import '../../../assets/styles/iconfont.css'
-
+.vip
+  padding-bottom:1rem
+  background: #fff
+  margin-top:.2rem
   .title
-    margin-top: .2rem
     text-indent: .2rem
     line-height: .8rem
-    background: #eeeeee
+    background: #fff
     text-align: left
     padding-left: .2rem
     color: #ff0000
@@ -58,5 +61,6 @@
 
   .more
     text-align: center
+    margin-top:.25rem
 
 </style>

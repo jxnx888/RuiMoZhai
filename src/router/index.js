@@ -2,6 +2,8 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import Home from '@/pages/home/Home'
 import Me from '@/pages/me/Me'
+import Class from '@/pages/class/Class'
+import Type from '@/pages/type/Type'
 
 
 Vue.use(Router);
@@ -18,6 +20,16 @@ export default new Router({
       path: '/me',
       name: 'Me',
       component: Me
+    },
+    {
+      path: '/Type/:id',
+      name: 'Type',
+      component: Type
+    },
+    {
+      path: '/Class/:id',
+      name: 'Class',
+      component: Class
     }
   ]
 })

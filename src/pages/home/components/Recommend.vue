@@ -1,9 +1,13 @@
 <template>
-  <div>
+  <div class="recommend">
     <div class="title">即将开始</div>
     <ul>
-      <li class="item border-bottom" v-for="item of list"
-      :key="item.id">
+      <router-link
+        tag="li"
+        class="item border-bottom"
+        v-for="item of list"
+        :key="item.id"
+        :to="'/Class/'+item.id">
         <div class="item-img-wrapper">
           <!--<img class="item-img" src="" >-->
           <div class="item-startTime">
@@ -15,7 +19,7 @@
           <p class="item-desc">{{item.desc}}</p>
         </div>
 
-      </li>
+      </router-link>
 
     </ul>
     <div class="more">
@@ -35,11 +39,13 @@
 </script>
 
 <style scoped lang="stylus">
+.recommend
+  background: #fff
+  margin-top: .2rem;
   .title
-    margin-top: .2rem
     text-indent: .2rem
     line-height: .8rem
-    background: #eeeeee
+    background: #fff
     text-align: left
     padding-left: .2rem
     color: #4aba92
@@ -68,5 +74,6 @@
       color:#ccc
   .more
     text-align: center
+    margin-top:.25rem
 
 </style>

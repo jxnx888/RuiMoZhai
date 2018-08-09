@@ -56,17 +56,20 @@
       "id": "0001",
       "imgUrl": "http://img1.qunarzz.com/sight/p0/1409/19/adca619faaab0898245dc4ec482b5722.jpg_140x140_80f63803.jpg",
       "title": "宁保成老师 宁保成老师 宁保成老师 宁保成老师 宁保成老师 宁保成老师",
-      "desc": "第一课时 《草书》技法初探（共三节）"
+      "desc": "第一课时 《草书》技法初探（共三节）",
+      "endTime": "2018/08/10 10: 00'"
     }, {
       "id": "0002",
       "imgUrl": "http://img1.qunarzz.com/sight/p0/1511/d2/d2aec2dfc5aa771290.water.jpg_140x140_abb362a7.jpg",
       "title": "宁保成老师 宁保成老师 宁保成老师  ",
-      "desc": "第一课时 《草书》技法初探（共三节）"
+      "desc": "第一课时 《草书》技法初探（共三节）",
+      "endTime": "2018/09/10 10: 00"
     }, {
       "id": "0003",
       "imgUrl": "http://img1.qunarzz.com/sight/p0/1501/f4/f467729126949c3a.water.jpg_140x140_ef235b1c.jpg",
       "title": "宁保成老师 宁保成老师 宁保成老师 宁保成老师 宁保成老师 宁保成老师",
-      "desc": "第一课时 《草书》技法初探（共三节）"
+      "desc": "第一课时 《草书》技法初探（共三节）",
+      "endTime": "2018/10/10 10: 00"
     }],
     "vipList": [{
       "id": "0001",
@@ -77,6 +80,47 @@
     }, {
       "id": "0003",
       "imgUrl": "http://ning-xin.com/Images/image1/6.jpg"
+    }],
+    "typeList": [{
+      "id": "0001",
+      "imgUrl": "http://img1.qunarzz.com/sight/p0/1409/19/adca619faaab0898245dc4ec482b5722.jpg_140x140_80f63803.jpg",
+      "title": "宁保成老师 宁保成老师 宁保成老师 宁保成老师 宁保成老师 宁保成老师",
+      "desc": "共三节",
+      "count": "123123"
+    }, {
+      "id": "0002",
+      "imgUrl": "http://img1.qunarzz.com/sight/p0/1511/d2/d2aec2dfc5aa771290.water.jpg_140x140_abb362a7.jpg",
+      "title": "宁保成老师 宁保成老师 宁保成老师  ",
+      "desc": "共三节",
+      "count": "123123"
+    }, {
+      "id": "0003",
+      "imgUrl": "http://img1.qunarzz.com/sight/p0/1501/f4/f467729126949c3a.water.jpg_140x140_ef235b1c.jpg",
+      "title": "宁保成老师 宁保成老师 宁保成老师 宁保成老师 宁保成老师 宁保成老师",
+      "desc": "共三节",
+      "count": "123123"
+    }],
+    "typeListZhuanLan":[{
+      "id": "0001",
+      "imgUrl": "http://img1.qunarzz.com/sight/p0/1501/f4/f467729126949c3a.water.jpg_140x140_ef235b1c.jpg",
+      "title": "宁保成老师 宁保成老师 宁保成老师 宁保成老师 宁保成老师 宁保成老师",
+      "update": "151",
+      "price": "99",
+      "oldPrice":"￥199"
+    }, {
+      "id": "0002",
+      "imgUrl": "http://img1.qunarzz.com/sight/p0/1501/f4/f467729126949c3a.water.jpg_140x140_ef235b1c.jpg",
+      "title": "宁保成老师  ",
+      "update": "121",
+      "price": "99",
+      "oldPrice":""
+    }, {
+      "id": "0003",
+      "imgUrl": "http://img1.qunarzz.com/sight/p0/1501/f4/f467729126949c3a.water.jpg_140x140_ef235b1c.jpg",
+      "title": "宁保成老师 宁保成老师 宁保成老师 宁保成老师 宁保成老师 宁保成老师",
+      "update": "101",
+      "price": "99",
+      "oldPrice":""
     }]
   }
 }

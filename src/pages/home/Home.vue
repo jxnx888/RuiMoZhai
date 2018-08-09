@@ -1,12 +1,16 @@
 <template>
   <div class="home">
+    <!--<homeCountDown :count="recommendList" ></homeCountDown>-->
+    <homeCouter :list="recommendList"></homeCouter>
+
     <homeSwiper :list="swiperList"></homeSwiper>
     <div class="container">
-    <homeSearch></homeSearch>
-    <homeIcons :list="iconList"></homeIcons>
-    <homeRecommend :list="recommendList"></homeRecommend>
-    <homeVip :list="vipList"></homeVip>
-    <homeNav></homeNav>
+      <homeSearch></homeSearch>
+      <homeIcons :list="iconList"></homeIcons>
+      <homeRecommend :list="recommendList"></homeRecommend>
+      <homeVip :list="vipList"></homeVip>
+      <homeNav></homeNav>
+
     </div>
     <router-link to="/Me">我的账户</router-link>
   </div>
@@ -21,6 +25,8 @@
   import homeVip from './components/Vip'
   import homeNav from './components/Navigation'
   import axios from 'axios'
+  import homeCountDown from './components/CountDown'
+  import homeCouter from './components/couter'
 
   export default {
     name: "Home",
@@ -30,40 +36,42 @@
       homeIcons,
       homeRecommend,
       homeVip,
-      homeNav
+      homeNav,
+      homeCountDown,
+      homeCouter
     },
-    data(){
-      return{
-        swiperList:[],
-        iconList:[],
-        recommendList:[],
-        vipList:[]
+    data() {
+      return {
+        swiperList: [],
+        iconList: [],
+        recommendList: [],
+        vipList: []
       }
     },
-    methods:{
+    methods: {
 
-      getHomeInfo(){
+      getHomeInfo() {
         axios.get('/api/index.json')
           .then(this.getHomeInfoSucc)
       },
-      getHomeInfoSucc(res){
-       res=res.data
-      if (res.ret && res.data) {
-        const data=res.data
-        this.swiperList = data.swiperList
-        this.iconList =data.iconList
-        this.recommendList = data.recommendList
-        this.vipList =data.vipList
-      }
+      getHomeInfoSucc(res) {
+        res = res.data
+        if (res.ret && res.data) {
+          const data = res.data
+          this.swiperList = data.swiperList
+          this.iconList = data.iconList
+          this.recommendList = data.recommendList
+          this.vipList = data.vipList
+        }
       }
     },
-    mounted(){
+    mounted() {
       this.getHomeInfo()
     }
   }
 </script>
 
 <style scoped lang="stylus">
-.home
-  background-color:#eee
+  .home
+    background-color: #eee
 </style>

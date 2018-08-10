@@ -1,8 +1,6 @@
 <template>
   <div class="home">
-    <!--<homeCountDown :count="recommendList" ></homeCountDown>-->
-    <homeCouter :list="recommendList"></homeCouter>
-
+     <!--<homeCountDown :list="recommendList"></homeCountDown>-->
     <homeSwiper :list="swiperList"></homeSwiper>
     <div class="container">
       <homeSearch></homeSearch>
@@ -26,7 +24,6 @@
   import homeNav from './components/Navigation'
   import axios from 'axios'
   import homeCountDown from './components/CountDown'
-  import homeCouter from './components/couter'
 
   export default {
     name: "Home",
@@ -38,7 +35,7 @@
       homeVip,
       homeNav,
       homeCountDown,
-      homeCouter
+
     },
     data() {
       return {

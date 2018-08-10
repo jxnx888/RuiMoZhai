@@ -1,9 +1,9 @@
 <template>
-  <div class="nav">
+  <div class="nav border-top">
     <router-link to="/">
     <div class="col-sm-6" >
-      <div class="icon">
-        <img  src="http://www.ning-xin.com/Images/image1/homeIcon.png" style="width: .5rem">
+      <div class="icon1 iconfont">
+        &#xe623;
       </div>
       <div class="row">
         首页
@@ -12,8 +12,8 @@
     </router-link>
     <router-link to="/me">
     <div  class="col-sm-6" >
-      <div class="icon">
-        <img   src="http://www.ning-xin.com/Images/image1/meIcon.png" style="width: .5rem">
+      <div class="icon iconfont">
+        &#xe737;
       </div>
       <div class="row">
         我的账户
@@ -39,6 +39,7 @@
     bottom: 0
     height: 1rem
     width: 100%
+    padding:.2rem 0
     background-color: #fff
     .col-sm-6
       float: left;
@@ -47,5 +48,10 @@
         text-align: center
         margin-top: .1rem
         color: #000
+      .icon1
+        text-align: center
+        margin-top: .1rem
+        color #4aba92
+
 
 </style>

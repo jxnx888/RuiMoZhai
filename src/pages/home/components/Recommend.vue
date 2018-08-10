@@ -11,7 +11,7 @@
         <div class="item-img-wrapper">
           <!--<img class="item-img" src="" >-->
           <div class="item-startTime">
-
+            <homeCountDown :list="recommendList"></homeCountDown>
           </div>
         </div>
         <div class=item-info>
@@ -29,10 +29,38 @@
 </template>
 
 <script>
+  import homeCountDown from './CountDown'
+  import axios from 'axios'
+
   export default {
     name: "homeRecommend",
     props: {
       list: Array
+    },
+    components: {
+      homeCountDown
+    },
+    data() {
+      return {
+        recommendList: [],
+      }
+    },
+    methods: {
+
+      getHomeInfo() {
+        axios.get('/api/index.json')
+          .then(this.getHomeInfoSucc)
+      },
+      getHomeInfoSucc(res) {
+        res = res.data
+        if (res.ret && res.data) {
+          const data = res.data
+          this.recommendList = data.recommendList
+        }
+      }
+    },
+    mounted() {
+      this.getHomeInfo()
     }
 
   }
@@ -75,5 +103,7 @@
     .more
       text-align: center
       margin-top: .25rem
+      height:.5rem
+
 
 </style>

@@ -1,30 +1,41 @@
 <template>
   <div class="nav">
+    <a href="#teacher">
     <div class="col-xs-4">
       <span class="iconfont">&#xe737;</span>
+
       <div>
         关于导师
       </div>
 
     </div>
+    </a>
+    <a href="#introduction">
     <div class="col-xs-4">
       <span class="iconfont">&#xe738;</span>
       <div>
         课程介绍
       </div>
     </div>
+    </a>
     <div class="col-xs-4">
+      <common-gallary></common-gallary>
       <span class="iconfont">&#xe739;</span>
       <div>
         作品欣赏
       </div>
     </div>
+
   </div>
 </template>
 
 <script>
+  import CommonGallary from './../../../common/gallary/Gallary'
   export default {
-    name: "ClassNavigation"
+    name: "ClassNavigation",
+    components:{
+      CommonGallary
+    }
   }
 </script>
 

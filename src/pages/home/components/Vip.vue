@@ -2,7 +2,7 @@
   <div class="vip">
     <div class="title">会员专区</div>
     <ul>
-      <li class="item border-bottom" v-for="item of list"
+      <li class="item " v-for="item of list"
           :key="item.id">
         <div class="item-img-wrapper">
           <img class="item-img" :src="item.imgUrl">
@@ -29,7 +29,7 @@
 <style scoped lang="stylus">
   @import '../../../assets/styles/iconfont.css'
 .vip
-  padding-bottom:1rem
+  padding-bottom:1.5rem
   background: #fff
   margin-top:.2rem
   .title

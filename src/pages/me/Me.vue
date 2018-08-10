@@ -1,51 +1,41 @@
 <template>
-  <div class="home">
-    <div class="container">
-      <homeNav></homeNav>
-    </div>
-   </div>
+  <div class="me">
+    <meHeader></meHeader>
+    <meAds></meAds>
+    <meList></meList>
+
+    <meNav></meNav>
+
+  </div>
 
 </template>
 
 <script>
 
-  import homeNav from './components/Navigation'
+  import meNav from './components/Navigation'
+  import meHeader from './components/Header'
+  import meAds from './components/Ads'
+  import meList from './components/List'
+
+
   import axios from 'axios'
 
   export default {
     name: "Me",
     components: {
-
-      homeNav
+      meNav,
+      meHeader,
+      meAds,
+      meList
     },
-    data(){
-      return{
-        swiperList:[],
-        iconList:[],
-        recommendList:[],
-        vipList:[]
-      }
+    data() {
+      return {}
     },
-    methods:{
-      getHomeInfo(){
-        axios.get('/api/index.json')
-          .then(this.getHomeInfoSucc)
-      },
-      getHomeInfoSucc(res){
-        res=res.data
-        if (res.ret && res.data) {
-          const data=res.data
-          this.swiperList = data.swiperList
-
-        }
-      }
-    },
-    mounted(){
-      this.getHomeInfo()
-    }
+    methods: {},
   }
 </script>
 
-<style scoped>
-
+<style scoped lang="stylus">
+  .me
+    background-color #eee
 </style>

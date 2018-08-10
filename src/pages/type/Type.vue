@@ -1,10 +1,12 @@
 <template>
   <div class="type">
     <div class="container">
+      <div class="containerIn">
       <TypeTopNave></TypeTopNave>
       <TypeSearch></TypeSearch>
       <TypeList :list="typeList"></TypeList>
       <TypeListZhuanLan :list="typeListZhuanLan"></TypeListZhuanLan>
+    </div>
     </div>
   </div>
 </template>
@@ -57,6 +59,8 @@
   .type
     background-color: #eee
     .container
+     background-color: #fff
+    .containerIn
       padding-left:15px
       padding-right:15px
 

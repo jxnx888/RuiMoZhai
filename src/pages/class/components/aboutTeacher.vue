@@ -1,6 +1,6 @@
 <template>
 
-  <div class="aboutTeacher" name="teacher">
+  <div class="aboutTeacher" name="teacher" >
     <div class="background">
       <div class="container">
         <div class="about">

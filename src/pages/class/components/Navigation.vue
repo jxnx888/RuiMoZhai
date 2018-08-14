@@ -1,6 +1,5 @@
 <template>
   <div class="nav">
-    <a href="#teacher">
     <div class="col-xs-4">
       <span class="iconfont">&#xe737;</span>
 
@@ -9,32 +8,47 @@
       </div>
 
     </div>
-    </a>
-    <a href="#introduction">
     <div class="col-xs-4">
       <span class="iconfont">&#xe738;</span>
       <div>
         课程介绍
       </div>
     </div>
-    </a>
-    <div class="col-xs-4">
-      <common-gallary></common-gallary>
+    <div class="col-xs-4" @click="handleGalleryClick">
       <span class="iconfont">&#xe739;</span>
       <div>
         作品欣赏
       </div>
     </div>
-
+    <CommonGallery
+      :imgs="imgs"
+      v-show="showGallery"
+      @close="handleGalleryClose"></CommonGallery>
   </div>
 </template>
 
 <script>
-  import CommonGallary from './../../../common/gallary/Gallary'
+  import CommonGallery from './../../../common/gallery/Gallery'
+
   export default {
     name: "ClassNavigation",
-    components:{
-      CommonGallary
+    data() {
+      return {
+        showGallery: false,
+        imgs: ['http://ning-xin.com/Images/image1/1.jpg', 'http://ning-xin.com/Images/image1/1.jpg']
+      }
+    },
+    methods: {
+      handleGalleryClick() {
+        this.showGallery = true;
+      },
+      handleGalleryClose() {
+        this.showGallery = false;
+      },
+
+    },
+    components: {
+      CommonGallery
     }
   }
 </script>

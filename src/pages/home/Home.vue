@@ -42,7 +42,8 @@
         swiperList: [],
         iconList: [],
         recommendList: [],
-        vipList: []
+        vipList: [],
+
       }
     },
     methods: {
@@ -59,6 +60,7 @@
           this.iconList = data.iconList
           this.recommendList = data.recommendList
           this.vipList = data.vipList
+
         }
       }
     },

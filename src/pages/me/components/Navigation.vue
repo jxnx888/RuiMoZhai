@@ -35,6 +35,7 @@
 
 <style scoped lang="stylus">
   .nav
+    z-index: 99
     position: fixed
     bottom: 0
     height: 1rem

@@ -1,42 +1,41 @@
 <template>
   <div class="couterDown">
-    <div v-for="item of list"
-         :key="item.id">
+    <count-down
+      v-on:start_callback="countDownS_cb(parseInt(id))"
+      v-on:end_callback="countDownE_cb(parseInt(id))"
+      :startTime="parseInt(startTime)"
+      :endTime="1534261621"
+      :tipText="'后开课'"
+      :tipTextEnd="'距离结束文字1'"
+      :endText="'结束自定义文字2'"
+      :dayTxt="'天'"
+      :hourTxt="'小时'"
+      :minutesTxt="'分钟'"
+      :secondsTxt="'秒'">
 
+    </count-down>
 
-      <count-down
-        v-on:start_callback="countDownS_cb(item.id)"
-        v-on:end_callback="countDownE_cb(item.id)"
-        :startTime="item.startTime"
-        :endTime="1533953169"
-        :tipText="'后开课'"
-        :dayTxt="'天'"
-        :hourTxt="'小时'"
-        :minutesTxt="'分钟'"
-        :secondsTxt="'秒'"
-        class="count-down">
-
-      </count-down>
-    </div>
-
+    <!--StartTime:-->
+    <!--{{startTime}}-->
   </div>
 </template>
 <script>
   import CountDown from 'vue2-countdown'
 
   export default {
-
+    data() {
+      return {}
+    },
     props: {
-      list: Array
+      startTime: String,
+      id: String
     },
     components: {
       CountDown
     },
+
     methods: {
-      // currentTime:function(){
-      //   var current = new Date().getTime()
-      //   console.log('当前时间：'+current)
-      // },
+
       countDownS_cb: function (x) {
         // console.log(x)
       },
@@ -44,6 +43,7 @@
         // console.log(x)
       }
     }
+
   }
 </script>
 <style scoped lang="stylus">

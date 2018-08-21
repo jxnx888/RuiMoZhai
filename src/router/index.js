@@ -4,7 +4,7 @@ import Home from '@/pages/home/Home'
 import Me from '@/pages/me/Me'
 import Class from '@/pages/class/Class'
 import Type from '@/pages/type/Type'
-
+import searchDetail from '@/pages/home/components/searchDetail'
 
 Vue.use(Router);
 
@@ -30,6 +30,11 @@ export default new Router({
       path: '/Class/:id',
       name: 'Class',
       component: Class
+    },
+    {
+      path: '/searchDetail',
+      name: 'searchDetail',
+      component: searchDetail
     }
   ],
 

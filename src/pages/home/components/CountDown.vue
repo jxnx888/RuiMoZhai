@@ -2,21 +2,18 @@
   <div class="couterDown">
     <count-down
       v-on:start_callback="countDownS_cb(parseInt(id))"
-      v-on:end_callback="countDownE_cb(parseInt(id))"
+      :currentTime="currentTime"
       :startTime="parseInt(startTime)"
       :endTime="1534261621"
       :tipText="'后开课'"
-      :tipTextEnd="'距离结束文字1'"
-      :endText="'结束自定义文字2'"
+      :tipTextEnd="'离结束文字1'"
+      :endText="'已结束'"
       :dayTxt="'天'"
       :hourTxt="'小时'"
       :minutesTxt="'分钟'"
       :secondsTxt="'秒'">
-
     </count-down>
 
-    <!--StartTime:-->
-    <!--{{startTime}}-->
   </div>
 </template>
 <script>
@@ -28,16 +25,21 @@
     },
     props: {
       startTime: String,
-      id: String
+      id: String,
+      currentTime: ''
     },
     components: {
       CountDown
     },
-
+    created() {
+      this.currentTimeF();
+    },
     methods: {
-
-      countDownS_cb: function (x) {
-        // console.log(x)
+      currentTimeF: function () {
+        var date = new Date();
+        var current = Math.round(date.getTime() / 1000).toString();
+        var currentTime1 = parseInt(current);
+        console.log(currentTime1)
       },
       countDownE_cb: function (x) {
         // console.log(x)

@@ -36,34 +36,9 @@
     name: "homeRecommend",
     props: {
       list: Array,
-      // startTime:Array
     },
     components: {
       homeCountDown
-    },
-    data() {
-      return {
-        recommendList: [],
-
-      }
-    },
-    methods: {
-
-      getHomeInfo() {
-        axios.get('/api/index.json')
-          .then(this.getHomeInfoSucc)
-        // console.log(startTime)
-      },
-      getHomeInfoSucc(res) {
-        res = res.data
-        if (res.ret && res.data) {
-          const data = res.data
-          this.recommendList = data.recommendList
-        }
-      }
-    },
-    mounted() {
-      this.getHomeInfo()
     }
 
   }

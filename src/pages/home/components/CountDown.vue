@@ -2,7 +2,7 @@
   <div class="couterDown">
     <count-down
       v-on:start_callback="countDownS_cb(parseInt(id))"
-      :currentTime="currentTime"
+      :currentTime="1534261621"
       :startTime="parseInt(startTime)"
       :endTime="1534261621"
       :tipText="'后开课'"

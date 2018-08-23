@@ -11,9 +11,11 @@
       </li>
 
     </ul>
+    <router-link to="/vipClass">
     <div class="more">
       <span class="iconfont">&#xe6ba;查看更多</span>
     </div>
+    </router-link>
   </div>
 </template>
 
@@ -62,5 +64,5 @@
   .more
     text-align: center
     margin-top:.25rem
-
+    color:#000
 </style>

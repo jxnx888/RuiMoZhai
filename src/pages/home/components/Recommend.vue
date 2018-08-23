@@ -22,9 +22,11 @@
       </router-link>
 
     </ul>
+    <router-link to="/classList">
     <div class="more">
-      <span class="iconfont">&#xe6ba;查看更多</span>
+      <span class="iconfont" >&#xe6ba;查看更多</span>
     </div>
+    </router-link>
   </div>
 </template>
 
@@ -82,6 +84,7 @@
       text-align: center
       margin-top: .25rem
       height:.5rem
+      color:#000
 
 
 </style>

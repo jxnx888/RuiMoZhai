@@ -5,6 +5,8 @@ import Me from '@/pages/me/Me'
 import Class from '@/pages/class/Class'
 import Type from '@/pages/type/Type'
 import searchDetail from '@/pages/home/components/searchDetail'
+import vipClass from '@/pages/vipClass/vipClass'
+import classList from  '@/pages/classList/classList'
 
 Vue.use(Router);
 
@@ -35,6 +37,16 @@ export default new Router({
       path: '/searchDetail',
       name: 'searchDetail',
       component: searchDetail
+    },
+    {
+      path: '/vipClass',
+      name: 'vipClass',
+      component: vipClass
+    },
+    {
+      path: '/classList',
+      name: 'classList',
+      component: classList
     }
   ],
 

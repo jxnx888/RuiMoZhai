@@ -1,5 +1,5 @@
 <template>
-  <div class="couterDown">
+  <div class="count-down">
     <count-down
       v-on:start_callback="countDownS_cb(parseInt(id))"
       :currentTime="1534261621"
@@ -50,12 +50,10 @@
 </script>
 <style scoped lang="stylus">
   .count-down
-    margin-top: .1rem
-    margin-left: .1rem
+    display: flex
+    justify-content: center
+    align-items: center
     height: 1.3rem
-    width: 1.3rem
-    background: #eee
-    line-height: .5rem
-
+    width:1.3rem
 
 </style>

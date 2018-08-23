@@ -70,6 +70,7 @@
         height: 1.3rem
         width: 1.3rem
         background: #eee
+        text-align: center;
     .item-info
       /*flex:1*/
       padding: .1rem

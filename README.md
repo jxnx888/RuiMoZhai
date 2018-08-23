@@ -1,6 +1,7 @@
-# father
+# Father's needs
 
-> This is a website for how to write calligraphy
+> This is a website for how to write calligraphy. It includes different type of the calligraphy, such as running hand, official script,regular scrip.
+
 
 ## Build Setup
 

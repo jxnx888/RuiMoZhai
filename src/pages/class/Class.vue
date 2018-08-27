@@ -3,7 +3,7 @@
     <ClassBanner></ClassBanner>
     <ClassHeader></ClassHeader>
     <ClassNavigation></ClassNavigation>
-    <ClassaboutTeacher></ClassaboutTeacher>
+    <ClassaboutTeacher :list="recommendList"></ClassaboutTeacher>
     <classIntroduction></classIntroduction>
     <classStyle></classStyle>
     <classOutline></classOutline>
@@ -18,6 +18,8 @@
   import classIntroduction from './components/Introduction'
   import classStyle from './components/Style'
   import classOutline from './components/Outline'
+  import axios from 'axios'
+
 
   export default {
     name: "Class",
@@ -30,8 +32,28 @@
       classStyle,
       classOutline
     },
+
     data() {
-      return {}
+      return {
+        recommendList: []
+      }
+    },
+    methods: {
+
+      getHomeInfo() {
+        axios.get('/api/index.json')
+          .then(this.getHomeInfoSucc)
+      },
+      getHomeInfoSucc(res) {
+        res = res.data
+        if (res.ret && res.data) {
+          const data = res.data
+          this.recommendList = data.recommendList
+        }
+      }
+    },
+    mounted() {
+      this.getHomeInfo()
     }
   }
 </script>

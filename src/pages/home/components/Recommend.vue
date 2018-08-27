@@ -7,7 +7,9 @@
         class="item border-bottom"
         v-for="item of list"
         :key="item.id"
-        :to="'/Class/'+item.id">
+        :to="'/Class/'+item.id"
+
+      >
         <div class="item-img-wrapper">
           <!--<img class="item-img" src="" >-->
           <div class="item-startTime">
@@ -18,7 +20,6 @@
           <p class="item-title">{{item.title}}</p>
           <p class="item-desc">{{item.desc}}</p>
         </div>
-
       </router-link>
 
     </ul>
@@ -32,7 +33,6 @@
 
 <script>
   import homeCountDown from './CountDown'
-  import axios from 'axios'
 
   export default {
     name: "homeRecommend",

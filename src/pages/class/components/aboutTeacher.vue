@@ -14,6 +14,8 @@
           宁保成导师
         </div>
         <div class="aboutTeacher-content">
+          <showMore style="margin-top: 20px;" :showHeight="showHeight" :content="aboutTeacher1"  ></showMore>
+          <showMore style="margin-top: 20px; background: #ff94a3" :showHeight="showHeight" :content="list"  ></showMore>
           <p>张献成，山东临清人，四川大学书法硕士，中国书法家协会会员，中央美术学院兰亭书法班成员。</p>
           <p>国展获奖入展情况:</p>
           <p>全国第二届篆书展优秀奖最高奖(中书协)</p>
@@ -42,12 +44,51 @@
         </div>
       </div>
     </div>
-  </div>
+    </div>
 </template>
 
 <script>
+  import showMore from '../../../common/showMore/showMore'
+
   export default {
-    name: "aboutTeacher"
+    name: "aboutTeacher",
+    props: {
+      list: String
+    },
+    components:{
+      showMore
+    },
+    data() {
+      return {
+        showHeight:200,
+        aboutTeacher1:'<p>张献成，山东临清人，四川大学书法硕士，中国书法家协会会员，中央美术学院兰亭书法班成员。</p>\n' +
+        '          <p>国展获奖入展情况:</p>\n' +
+        '          <p>全国第二届篆书展优秀奖最高奖(中书协)</p>\n' +
+        '          <p>首届“西峡颂”全国书法展优秀奖最高奖(中书协)</p>\n' +
+        '          <p>全国首届“三苏奖”书法作品展入展(中书协)</p>\n' +
+        '          <p>全国首届“陶渊明奖”书法作品展入展(中书协)</p>\n' +
+        '          <p>全国首届“廉江红橙奖”书法作品展入展(中书协)</p>\n' +
+        '          <p>全国首届“云峰奖”书法作品展入展(中书协)</p>\n' +
+        '          <p>全国第二届“平复帖奖”书法作品展入展(中书协)</p>\n' +
+        '          <p>全国第三届“四堂杯奖”书法作品展入展(中书协)</p>\n' +
+        '          <p>全国第六届“**风度”书法新锐作品展(中书协)</p>\n' +
+        '          <p>第五届黄原奖学金金奖</p>\n' +
+        '          <p>第三届“希望圆梦”书法作品展二等奖</p>\n' +
+        '          <p> 山东书法“国展精英”展入展</p>\n' +
+        '          <p>贵州省专业文艺奖三等奖</p>\n' +
+        '          <p>“墨舞中原”全国书法电视大奖赛大学生组一等奖</p>\n' +
+        '          <p>“雷锋奖”全国书法作品展二等奖</p>\n' +
+        '          <p>九派诗廊工程书法作品展优秀奖最高奖</p>\n' +
+        '          <p>第二届全国高校大学生艺术展演二等奖</p>\n' +
+        '          <p>第十一届中国.兴化郑板桥艺术节“三紫星城杯”书画大赛作品三等奖</p>\n' +
+        '          <p> 第五届西部房车书法作品展优秀奖</p>\n' +
+        '          <p>“书画金庐陵，情动红井冈”全国书画大赛优秀奖</p>\n' +
+        '          <p>贵州省第二届恒安杯篆刻作品展优秀奖</p>\n' +
+        '          <p> 贵州省第六届行草展优秀奖</p>\n' +
+        '          <p>古戏台全国书法大赛作品展优秀奖</p>'
+      }
+    },
+
   }
 </script>
 

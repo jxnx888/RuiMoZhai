@@ -13,7 +13,6 @@
       :minutesTxt="'分钟'"
       :secondsTxt="'秒'">
     </count-down>
-
   </div>
 </template>
 <script>

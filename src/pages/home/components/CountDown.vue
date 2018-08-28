@@ -2,9 +2,8 @@
   <div class="count-down">
     <count-down
       v-on:start_callback="countDownS_cb(parseInt(id))"
-      :currentTime="1534261621"
       :startTime="parseInt(startTime)"
-      :endTime="1534261621"
+      :endTime="parseInt(startTime)"
       :tipText="'后开课'"
       :tipTextEnd="'离结束文字1'"
       :endText="'已结束'"
@@ -24,27 +23,11 @@
     },
     props: {
       startTime: String,
-      id: String,
-      currentTime: ''
+      id: String
     },
     components: {
       CountDown
-    },
-    created() {
-      this.currentTimeF();
-    },
-    methods: {
-      currentTimeF: function () {
-        var date = new Date();
-        var current = Math.round(date.getTime() / 1000).toString();
-        var currentTime1 = parseInt(current);
-        console.log(currentTime1)
-      },
-      countDownE_cb: function (x) {
-        // console.log(x)
-      }
     }
-
   }
 </script>
 <style scoped lang="stylus">

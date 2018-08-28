@@ -6,13 +6,13 @@
         <div ref="content">
           <slot>
             <!-- 当外界 <show-more> 标签中有元素时，使用 <show-more> 标签中的元素进行渲染，否则使用下面这个 div 进行渲染 -->
-            <div v-html="content" ></div>
+            <div v-html="content" class="content" ></div>
           </slot>
         </div>
       </div>
 
       <div class="control" v-show="isLongContent" :class="{'show-more' : showMore}">
-        <button class="showMore" type="text" @click="_toggleShowMore">{{ showMore ? '收起' : '显示更多'}}</button>
+        <button class="showMore" type="text" @click="_toggleShowMore" v-bind:class="{bgColor:buttonColor}">{{ showMore ? '收起' : '显示更多'}}</button>
       </div>
     </div>
   </div>
@@ -34,7 +34,8 @@
     data () {
       return {
         showMore: false,
-        isLongContent: true
+        isLongContent: false,
+        buttonColor: false
       }
     },
     watch: {
@@ -59,7 +60,8 @@
         })
       },
       _toggleShowMore () {
-        this.showMore = !this.showMore
+        this.showMore = !this.showMore;
+        this.buttonColor = !this.buttonColor
       }
     }
   }
@@ -76,16 +78,28 @@
     position: absolute;
     bottom: 0;
     width: 100%;
-    padding-top: 40px;
+    padding-top: 100px;
     text-align: center;
-    background-image: linear-gradient(-180deg, rgba(255, 255, 255, 0) 0%, #fff 70%);
+    background-image: linear-gradient( rgba(155, 155, 155, 0) 0%, #f7f7f7 100%);
+    text-indent: 0rem;
   }
   .showMore {
+    background-color: #f7f7f7;
+    color:#9b9b9b;
+    margin: 0 auto;
+  }
+  .bgColor {
+    background-color:#eee;
+    display: none;
   }
   .show-more {
      padding-top: 0;
      background: none;
    }
+  .content {
+    color:#9b9b9b;
+    line-height:.5rem;
+  }
 
 
 </style>

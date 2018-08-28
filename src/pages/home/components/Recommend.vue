@@ -8,7 +8,6 @@
         v-for="item of list"
         :key="item.id"
         :to="'/Class/'+item.id"
-
       >
         <div class="item-img-wrapper">
           <!--<img class="item-img" src="" >-->

@@ -3,7 +3,7 @@
     <ClassBanner></ClassBanner>
     <ClassHeader></ClassHeader>
     <ClassNavigation></ClassNavigation>
-    <ClassaboutTeacher :list="recommendList"></ClassaboutTeacher>
+    <ClassaboutTeacher :aboutTeacher="recommendList" ></ClassaboutTeacher>
     <classIntroduction></classIntroduction>
     <classStyle></classStyle>
     <classOutline></classOutline>
@@ -30,12 +30,14 @@
       ClassaboutTeacher,
       classIntroduction,
       classStyle,
-      classOutline
+      classOutline,
     },
+    props: {
+     },
 
     data() {
       return {
-        recommendList: []
+        recommendList: String
       }
     },
     methods: {
@@ -43,12 +45,13 @@
       getHomeInfo() {
         axios.get('/api/index.json')
           .then(this.getHomeInfoSucc)
+
       },
       getHomeInfoSucc(res) {
         res = res.data
         if (res.ret && res.data) {
-          const data = res.data
-          this.recommendList = data.recommendList
+          const data = res.data;
+          this.recommendList = data.recommendList[parseInt(this.$route.params.id)-1].aboutTeacher;
         }
       }
     },

@@ -1,0 +1,71 @@
+<template>
+  <div class="icons">
+    <swiper>
+      <swiper-slide>
+
+        <router-link
+          tag="div"
+          class="icon col-sm-2"
+          v-for="item of list"
+          :key="item.id"
+          :to="item.link">
+          <div class="icon-img">
+            <img :src="item.imgUrl" class="icon-img-content"/>
+           
+          </div>
+          <p class="icon-desc">{{item.desc}}</p>
+        </router-link>
+
+      </swiper-slide>
+    </swiper>
+
+  </div>
+</template>
+
+<script>
+  export default {
+    name: "HomeIconsNav",
+    props: {
+      list: Array
+    }
+  }
+</script>
+
+<style scoped lang="stylus">
+  .icons
+    height: 0
+    padding-bottom: 50%
+    background: #fff
+    margin-top: .2rem;
+    .icon
+      position: relative
+      overflow: hidden
+      float: left
+      width: 25%
+      height: 0
+      padding-bottom: 25%
+      .icon-img
+        position: absolute
+        top: 0
+        left: 0
+        right: 0
+        bottom: 0.44rem
+        -webkit-box-sizing: border-box
+        -moz-box-sizing: border-box
+        box-sizing: border-box
+        padding: .1rem
+        .icon-img-content
+          display: block
+          margin: 0 auto
+          height: 85%
+          padding-top: 0.15rem
+      .icon-desc
+        position: absolute
+        left: 0
+        right: 0
+        bottom: 0
+        height: 0.44rem
+        line-height: 0.44rem
+        text-align: center
+        color: #333
+</style>

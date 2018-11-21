@@ -11,61 +11,56 @@
       "id": "0003",
       "imgUrl": "http://ning-xin.com/Images/image1/3.jpg"
     }],
-    "iconList": [{
+    "iconList": [ {
       "id": "0001",
-      "imgUrl": "http://ning-xin.com/Images/image1/xingshu.png",
-      "desc": "行书"
+      "imgUrl": "https://github.com/jxnx888/XinNing_PersonalWebSite/blob/master/XinNing/Images/vueImg/skill1.png?raw=true",
+      "desc": "技能",
+      "link":"me"
     }, {
       "id": "0002",
-      "imgUrl": "http://ning-xin.com/Images/image1/kaishu.png",
-      "desc": "楷书"
+      "imgUrl": "https://github.com/jxnx888/XinNing_PersonalWebSite/blob/master/XinNing/Images/vueImg/project1.png?raw=true",
+      "desc": "项目",
+      "link":"projects"
     }, {
       "id": "0003",
-      "imgUrl": "http://ning-xin.com/Images/image1/lishu.png",
-      "desc": "隶书"
+      "imgUrl": "https://github.com/jxnx888/XinNing_PersonalWebSite/blob/master/XinNing/Images/vueImg/blog1.png?raw=true",
+      "desc": "博客",
+      "link":"blog"
     }, {
       "id": "0004",
-      "imgUrl": "http://ning-xin.com/Images/image1/caoshu.png",
-      "desc": "草书"
+      "imgUrl": "https://github.com/jxnx888/XinNing_PersonalWebSite/blob/master/XinNing/Images/vueImg/contact1.png?raw=true",
+      "desc": "联系",
+      "link":"contact"
     }, {
       "id": "0005",
-      "imgUrl": "http://ning-xin.com/Images/image1/zuanshu.png",
-      "desc": "篆书"
+      "imgUrl": "https://github.com/jxnx888/XinNing_PersonalWebSite/blob/master/XinNing/Images/vueImg/images.png?raw=true",
+      "desc": "GitHub",
+      "link":"github"
     }, {
       "id": "0006",
-      "imgUrl": "http://ning-xin.com/Images/image1/zuanke.png",
-      "desc": "篆刻"
+      "imgUrl": "https://github.com/jxnx888/XinNing_PersonalWebSite/blob/master/XinNing/Images/vueImg/facebook1.png?raw=true",
+      "desc": "Facebook",
+      "link":"facebook"
     }, {
       "id": "0007",
-      "imgUrl": "http://ning-xin.com/Images/image1/hua.png",
-      "desc": "国画"
-    }, {
-      "id": "0008",
-      "imgUrl": "http://ning-xin.com/Images/image1/wenhua.png",
-      "desc": "文化"
-    }, {
-      "id": "0009",
-      "imgUrl": "http://ning-xin.com/Images/image1/zhanshi.png",
-      "desc": "国展"
-    }, {
-      "id": "0010",
-      "imgUrl": "http://ning-xin.com/Images/image1/ji.png",
-      "desc": "基础"
+      "imgUrl": "https://github.com/jxnx888/XinNing_PersonalWebSite/blob/master/XinNing/Images/vueImg/linkedin.png?raw=true",
+      "desc": "LinkedIn",
+      "link":"linkedin"
     }],
     "recommendList": [{
       "id": "0001",
       "imgUrl": "http://img1.qunarzz.com/sight/p0/1409/19/adca619faaab0898245dc4ec482b5722.jpg_140x140_80f63803.jpg",
-      "title": "张献成张献成张献成张献成张献成 ",
-      "desc": "第一课时 《草书》技法初探（共三节）",
-      "startTime": "1538099523",
+      "title": "Section 2.3 Function",
+      "desc": "What's Function?",
+      "startTime": "1544587932",
       "aboutTeacher":"<p>张献成，山东临清人，四川大学书法硕士，中国书法家协会会员，中央美术学院兰亭书法班成员。</p><p>国展获奖入展情况:</p><p>全国第二届篆书展优秀奖最高奖(中书协)</p><p>首届“西峡颂”全国书法展优秀奖最高奖(中书协)</p><p>全国首届“三苏奖”书法作品展入展(中书协)</p><p>全国首届“陶渊明奖”书法作品展入展(中书协)</p><p>全国首届“廉江红橙奖”书法作品展入展(中书协)</p><p>全国首届“云峰奖”书法作品展入展(中书协)</p><p>全国第二届“平复帖奖”书法作品展入展(中书协)</p><p>全国第三届“四堂杯奖”书法作品展入展(中书协)</p><p>全国第六届“**风度”书法新锐作品展(中书协)</p>"
     }, {
       "id": "0002",
       "imgUrl": "http://img1.qunarzz.com/sight/p0/1511/d2/d2aec2dfc5aa771290.water.jpg_140x140_abb362a7.jpg",
-      "title": "XXXXXXXXXXXXXXXXXXXXXXXX ",
-      "desc": "第一课时 《XXXX》技法初探（共三节）",
-      "startTime": "1535853600",
-      "aboutTeacher":"<p>XXXX，XXXX</p><p>国展获奖入展情况:</p><p>全国第二届篆书展优秀奖最高奖(中书协)</p><p>首届“西峡颂”全国书法展优秀奖最高奖(中书协)</p><p>全国首届“三苏奖”书法作品展入展(中书协)</p><p>全国首届“陶渊明奖”书法作品展入展(中书协)</p><p>全国首届“廉江红橙奖”书法作品展入展(中书协)</p><p>全国首届“云峰奖”书法作品展入展(中书协)</p><p>全国第二届“平复帖奖”书法作品展入展(中书协)</p><p>全国第三届“四堂杯奖”书法作品展入展(中书协)</p><p>全国第六届“**风度”书法新锐作品展(中书协)</p>"
+      "title": "Section 2.4 Arrays ",
+      "desc": "What's Array",
+      "startTime": "1544674332",
+      "aboutTeacher":"<p>Array is</p><p>国展获奖入展情况:</p><p>全国第二届篆书展优秀奖最高奖(中书协)</p><p>首届“西峡颂”全国书法展优秀奖最高奖(中书协)</p><p>全国首届“三苏奖”书法作品展入展(中书协)</p><p>全国首届“陶渊明奖”书法作品展入展(中书协)</p><p>全国首届“廉江红橙奖”书法作品展入展(中书协)</p><p>全国首届“云峰奖”书法作品展入展(中书协)</p><p>全国第二届“平复帖奖”书法作品展入展(中书协)</p><p>全国第三届“四堂杯奖”书法作品展入展(中书协)</p><p>全国第六届“**风度”书法新锐作品展(中书协)</p>"
 
     }, {
       "id": "0003",
@@ -76,15 +71,18 @@
       "aboutTeacher":"<p>AAAA，AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA院兰亭书法班成员。</p><p>国展获奖入展情况:</p><p>全国第二届篆书展优秀奖最高奖(中书协)</p><p>首届“西峡颂”全国书法展优秀奖最高奖(中书协)</p><p>全国首届“三苏奖”书法作品展入展(中书协)</p><p>全国首届“陶渊明奖”书法作品展入展(中书协)</p><p>全国首届“廉江红橙奖”书法作品展入展(中书协)</p><p>全国首届“云峰奖”书法作品展入展(中书协)</p><p>全国第二届“平复帖奖”书法作品展入展(中书协)</p><p>全国第三届“四堂杯奖”书法作品展入展(中书协)</p><p>全国第六届“**风度”书法新锐作品展(中书协)</p>"
 
     }],
-    "vipList": [{
+    "projectsList": [{
       "id": "0001",
-      "imgUrl": "http://ning-xin.com/Images/image1/4.jpg"
+      "imgUrl": "https://github.com/jxnx888/XinNing_PersonalWebSite/blob/master/XinNing/Images/Craig.png?raw=true"
     }, {
       "id": "0002",
-      "imgUrl": "http://ning-xin.com/Images/image1/5.jpg"
+      "imgUrl": "https://github.com/jxnx888/XinNing_PersonalWebSite/blob/master/XinNing/Images/Current.png?raw=true"
     }, {
       "id": "0003",
-      "imgUrl": "http://ning-xin.com/Images/image1/6.jpg"
+      "imgUrl": "https://github.com/jxnx888/XinNing_PersonalWebSite/blob/master/XinNing/Images/YMCA.png?raw=true"
+    }, {
+      "id": "0004",
+      "imgUrl": "https://github.com/jxnx888/XinNing_PersonalWebSite/blob/master/XinNing/Images/StoveTrap.png?raw=true"
     }],
     "typeList": [{
       "id": "0001",

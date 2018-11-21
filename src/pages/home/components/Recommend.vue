@@ -1,6 +1,8 @@
 <template>
   <div class="recommend">
-    <div class="title">即将开始</div>
+    <div class="title">博客: JavaScript 学习, 正在进行中>></div>
+  <div class="container">
+  
     <ul>
       <router-link
         tag="li"
@@ -27,6 +29,7 @@
       <span class="iconfont" >&#xe6ba;查看更多</span>
     </div>
     </router-link>
+  </div>
   </div>
 </template>
 

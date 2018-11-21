@@ -4,7 +4,7 @@
       v-on:start_callback="countDownS_cb(parseInt(id))"
       :startTime="parseInt(startTime)"
       :endTime="parseInt(startTime)"
-      :tipText="'后开课'"
+      :tipText="'后发布'"
       :tipTextEnd="'离结束文字1'"
       :endText="'已结束'"
       :dayTxt="'天'"
@@ -37,5 +37,5 @@
     align-items: center
     height: 1.3rem
     width:1.3rem
-
+    line-height: 0.35rem
 </style>

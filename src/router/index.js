@@ -5,7 +5,7 @@ import Me from '@/pages/me/Me'
 import Class from '@/pages/class/Class'
 import Type from '@/pages/type/Type'
 import searchDetail from '@/pages/home/components/searchDetail'
-import vipClass from '@/pages/vipClass/vipClass'
+import projectsList from '@/pages/projectsList/projectsList'
 import classList from  '@/pages/classList/classList'
 
 Vue.use(Router);
@@ -39,15 +39,30 @@ export default new Router({
       component: searchDetail
     },
     {
-      path: '/vipClass',
-      name: 'vipClass',
-      component: vipClass
+      path: '/projectsList/:id',
+      name: 'projectsList',
+      component: projectsList
     },
     {
       path: '/classList',
       name: 'classList',
       component: classList
-    }
+    },
+    {
+      path: '/github',
+      beforeEnter() {location.href = 'https://github.com/jxnx888'}
+    },
+    {
+      path: '/linkedin',
+      beforeEnter() {location.href = 'https://www.linkedin.com/in/xin-ning-28818b115/'}
+    },
+    ,
+    {
+      path: '/facebook',
+      beforeEnter() {location.href = 'https://www.facebook.com/jxnx888'}
+    },
+    
+
   ],
 
 })

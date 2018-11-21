@@ -2,7 +2,7 @@
 
   <div class="search">
     <router-link to="/searchDetail">
-    <div class="iconfont input-search" >&#xe6e4;书体、碑帖、课程名称或导师名称</div>
+    <div class="iconfont input-search" >&#xe6e4;博客名称</div>
     </router-link>
   </div>
  </template>
@@ -16,7 +16,7 @@
 <style scoped lang="stylus">
 
   .input-search
-    width: 95%
+    width: 98%
     height: .6rem
     line-height: .6rem
     margin: .2rem  auto

@@ -8,14 +8,19 @@ import fasteClick from 'fastclick'
 // 引入轮播图插件库和css
 import VueAwesomeSwiper from 'vue-awesome-swiper'
 import 'swiper/dist/css/swiper.css'
-
-
+import 'jquery'
+import BootstrapVue from 'bootstrap-vue'
+import 'bootstrap/dist/css/bootstrap.css'
+import 'bootstrap-vue/dist/bootstrap-vue.css'
 
 import './assets/styles/reset.css'
 import './assets/styles/border.css'
 import './assets/styles/iconfont.css'
 // import '../node_modules/bootstrap/dist/css/bootstrap.css'
 
+
+import './assets/scripts/typeWrite'
+import './common/scrollTop/components/scrollTop'
 
 
 Vue.config.productionTip = false

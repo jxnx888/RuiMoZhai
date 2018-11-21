@@ -1,4 +1,5 @@
 <template>
+ <!--https://github.com/surmon-china/vue-awesome-swiper-->
   <div>
     <div class="wrapper">
       <swiper :options="swiperOption" v-if="showSwiper">
@@ -30,11 +31,22 @@
           list: Array
         },
         swiperOption: {
-          pagination: '.swiper-pagination',
+          pagination: {
+            el: '.swiper-pagination',
+            clickable: true
+          },
           loop: true,
-          autoplay: true,
+          autoplay: {
+             delay: 5000,
+              disableOnInteraction: false
+          },
+          spaceBetween: 30,
           speed: 5000,
           centeredSlides: true,
+          // navigation: {
+          //   nextEl: '.swiper-button-next',
+          //   prevEl: '.swiper-button-prev'
+          // }
         }
       }
     },

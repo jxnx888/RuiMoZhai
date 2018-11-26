@@ -11,11 +11,21 @@
       "id": "0003",
       "imgUrl": "http://ning-xin.com/Images/image1/3.jpg"
     }],
+    "contactSwiperList": [{
+      "id": "0001",
+      "imgUrl":"http://ning-xin.com/Images/Skill_banner.gif"
+    },{
+      "id": "0002",
+      "imgUrl": "http://ning-xin.com/Images/Skill_banner.gif"
+    },{
+      "id": "0003",
+      "imgUrl": "http://ning-xin.com/Images/Skill_banner.gif"
+    }],
     "iconList": [ {
       "id": "0001",
       "imgUrl": "https://github.com/jxnx888/XinNing_PersonalWebSite/blob/master/XinNing/Images/vueImg/skill1.png?raw=true",
       "desc": "技能",
-      "link":"me"
+      "link":"skills"
     }, {
       "id": "0002",
       "imgUrl": "https://github.com/jxnx888/XinNing_PersonalWebSite/blob/master/XinNing/Images/vueImg/project1.png?raw=true",
@@ -73,15 +83,19 @@
     }],
     "projectsList": [{
       "id": "0001",
+      "checkView":"checkView(0)",
       "imgUrl": "https://github.com/jxnx888/XinNing_PersonalWebSite/blob/master/XinNing/Images/Craig.png?raw=true"
     }, {
       "id": "0002",
+      "checkView":"checkView(1)",
       "imgUrl": "https://github.com/jxnx888/XinNing_PersonalWebSite/blob/master/XinNing/Images/Current.png?raw=true"
     }, {
       "id": "0003",
+      "checkView":"checkView(2)",
       "imgUrl": "https://github.com/jxnx888/XinNing_PersonalWebSite/blob/master/XinNing/Images/YMCA.png?raw=true"
     }, {
       "id": "0004",
+      "checkView":"checkView(3)",
       "imgUrl": "https://github.com/jxnx888/XinNing_PersonalWebSite/blob/master/XinNing/Images/StoveTrap.png?raw=true"
     }],
     "typeList": [{

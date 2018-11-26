@@ -7,6 +7,10 @@ import Type from '@/pages/type/Type'
 import searchDetail from '@/pages/home/components/searchDetail'
 import projectsList from '@/pages/projectsList/projectsList'
 import classList from  '@/pages/classList/classList'
+import Skill from '@/pages/skill/skill'
+import Contact from '@/pages/contact/contact'
+import Projects from '@/pages/projectsList/projectsList'
+import Blog from '@/pages/blog/blog'
 
 Vue.use(Router);
 
@@ -17,7 +21,31 @@ export default new Router({
       name: 'Home',
       component: Home
     },
-
+    {
+      path: '/home',
+      name: 'Home',
+      component: Home
+    },
+    {
+      path: '/skills',
+      name: 'Skills',
+      component: Skill
+    },
+    {
+      path: '/projects',
+      name: 'Projects',
+      component: Projects
+    },
+    {
+      path: '/contact',
+      name: 'Contact',
+      component: Contact
+    },
+    {
+      path: '/blog',
+      name: 'Blog',
+      component: Blog
+    },
     {
       path: '/me',
       name: 'Me',

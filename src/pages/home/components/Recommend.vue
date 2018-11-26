@@ -59,7 +59,7 @@
       text-align: left
       padding-left: .2rem
       color: #4aba92
-      border-left: 2px solid #4aba92
+      border-left: 4px solid #4aba92
 
     .item
       display: flex
@@ -82,7 +82,7 @@
         font-size: .32rem
       .item-desc
         line-height: .4rem
-        color: #ccc
+        color: #8e8c8c
     .more
       text-align: center
       margin-top: .25rem

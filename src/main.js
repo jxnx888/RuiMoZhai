@@ -9,26 +9,34 @@ import fasteClick from 'fastclick'
 import VueAwesomeSwiper from 'vue-awesome-swiper'
 import 'swiper/dist/css/swiper.css'
 import 'jquery'
+
+//import Bootstrap-vue
 import BootstrapVue from 'bootstrap-vue'
 import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
 
+//import baidu map
+import BaiduMap from 'vue-baidu-map'
+
+
 import './assets/styles/reset.css'
 import './assets/styles/border.css'
 import './assets/styles/iconfont.css'
-// import '../node_modules/bootstrap/dist/css/bootstrap.css'
 
 
 import './assets/scripts/typeWrite'
-import './common/scrollTop/components/scrollTop'
 
+//Validate function
+import VeeValidate from 'vee-validate';
+Vue.use(VeeValidate);
 
 Vue.config.productionTip = false
 // 移动端 取消 按钮点击300ms延迟
 fasteClick.attach(document.body)
 // 引入轮播图插件库和css
-Vue.use(VueAwesomeSwiper)
-
+Vue.use(VueAwesomeSwiper )
+Vue.use(BootstrapVue)
+Vue.use(BaiduMap, {ak: 'qkiMU0GghA3q4RZmRsfiWttWiufZjos0'})
 
 /* eslint-disable no-new */
 new Vue({

@@ -8,6 +8,7 @@
 </div>
 </template>
 <script>
+import './components/scrollTop'
 
   export default {
     name: "scrollTop",
@@ -23,7 +24,7 @@
 	overflow: hidden;
 	text-align: center;
 	z-index: 99999999;
-    background-color: #777777;
+    background-color: #6cb1fe;
 	color: #eeeeee;
 	width: 50px;
 	height: 48px;

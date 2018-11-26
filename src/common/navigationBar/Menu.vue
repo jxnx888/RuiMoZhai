@@ -3,16 +3,18 @@
     <div class="menu-bar-con">
       <button class="menu-bar-btn" @click="isOpenChange" v-bind:class="{'btn-active':isOpen}">
         <span class="icon iconfont">&#xe76e;</span> <!-- change the menu icon -->
+
       </button>
     </div>
     <ul class="menu-item-list" >
       <menu-item
-        v-for="(item, itemIndex) in iconImgArr"
+        v-for="item of iconImgArr"
+        :key="item.id"
         :radius="radius"
-        :index="itemIndex"
-        :angleCur="startAngle+angleStep*itemIndex"
+        :index="item.id"
+        :angleCur="startAngle+angleStep*(item.id-1)"
         :animationDuration="animationDuration"
-        :itemAnimationDelay="0 + (itemIndex * itemAnimationDelay)"
+        :itemAnimationDelay="0 + (item.id * itemAnimationDelay)"
         :icon="'icon-'+item.iconName"
         :showItem="showItem"
         :isOpen="isOpen"
@@ -21,6 +23,7 @@
         v-on:showItemChange="showItemChange"
         v-on:isOpenChange="isOpenChange"
         v-on:animationCountIncrease=" (val) => {animationCountIncrease(val)}"
+        :link="item.iconLink"
       >
       </menu-item>
 
@@ -29,7 +32,7 @@
 </template>
 
 <script>
-  import item from '../../common/navigationBar/conponents/item'
+  import item from './conponents/item'
   export default {
     props: {
       startAngle: {
@@ -50,7 +53,7 @@
       itemNum: {
         default: 8
       },
-      iconImgArr: Array
+      iconImgArr: Array,
     },
     data () {
       return {
@@ -64,7 +67,8 @@
 
     computed: {
       angleStep () {
-        return (this.endAngle - this.startAngle) / (this.itemNum - 1)
+        return (this.endAngle - this.startAngle) / (this.itemNum - 1)//计算每个item的夹角
+
       }
     },
     created () {
@@ -132,8 +136,8 @@
         .menu-bar-btn
           position absolute
           border-radius 50%
-          width: 1.5rem
-          height: 1.5rem
+          width: 1.2rem
+          height: 1.2rem
           z-index 1
           cursor pointer
           transition all .28s cubic-bezier(.4, 0, .2, 1)

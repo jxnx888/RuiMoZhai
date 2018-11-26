@@ -1,29 +1,30 @@
 <template>
   <div class="projectsList">
-    <div class="title">项目中心</div>
+    <div class="title " >项目中心</div>
     <router-link
         tag="li"
-        class="item border-bottom"
+        class="item animated col-sm-6"
         v-for="item of list"
         :key="item.id"
         :to="'/projectsList/'+item.id"
+        :class="{'bounceInLeft': scrolled}" 
       >
-      <ul>
-     
-      <li>
-        <div class="item-img-wrapper">
+      
+        <div class="item-img-wrapper " >
 
-          <img class="item-img " :src="item.imgUrl">
+          <img class="item-img " 
+           
+          :src="item.imgUrl">
            
         </div>
 
-      </li>
-    
-    </ul>
-      </router-link>
+    </router-link>
+
+     <router-link to="/projectList">
     <div class="more">
-      <span class="iconfont">&#xe6ba;查看更多</span>
+      <span class="iconfont" >&#xe6ba;查看更多</span>
     </div>
+    </router-link>
    
   </div>
 </template>
@@ -33,12 +34,37 @@
     name: "projects",
     props: {
       list: Array
+    },
+    data() {
+       return {
+         scrolled: false
+       }
+  },
+   methods: {
+    handleScroll() {
+      let obj = document.querySelector('.item');
+      let {top,bottom} = obj.getBoundingClientRect();
+      let height = document.documentElement.clientHeight;
+      // this.scrolled = top < height && bottom >0;
+      
+      this.scrolled = window.scrollY > 450;
     }
+  },
+  created() {
+    window.addEventListener('scroll', this.handleScroll);
+  },
+  destroyed() {
+    window.removeEventListener('scroll', this.handleScroll);
+  }
+     
   }
 </script>
 
 <style scoped lang="stylus">
   @import '../../../assets/styles/iconfont.css'
+  @import '../../../assets/styles/animate.css'
+  @import '../../../assets/scripts/scrollLoading.js'
+
 .projectsList
   padding-bottom:1.5rem
   background: #fff
@@ -51,9 +77,10 @@
     padding-left: .2rem
     color: #ff0000
     border-left: 4px solid #ff0000
-
+    transition: all 1s
   .item
     display: flex
+   
     /*height: 2rem*/
     /*overflow: hidden*/
     margin-top: 0.25rem
@@ -68,7 +95,7 @@
         -webkit-border-radius: 10px
         -moz-border-radius: 10px
         border-radius: 10px
-        box-shadow: 5px 5px 5px #919191
+        box-shadow: 5px 5px 5px #919191      
   .more
     text-align: center
     margin-top:.25rem

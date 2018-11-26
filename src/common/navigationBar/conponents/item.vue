@@ -1,162 +1,314 @@
 <template>
+  <router-link :to="link">
   <li class="item" ref="item" :style="styleArr" @click="changeShowItem">
+  
     <transition :name="currentIndex === index?'item-selected':'item-not-selected'">
+  
       <div class="item-wrapper" v-show="showItem" @animationend="animationEnd">
-        <button class="item-btn" :class="[icon]"></button>
-      </div>
+         
+          <button  class="item-btn" :class="[icon]"> </button>  
+   </div>
     </transition>
+  
   </li>
-
+  </router-link>
 </template>
 
 <script>
   export default {
+  
     props: {
+  
       radius: Number,
+  
       angleCur: Number,
+  
       index: Number,
+  
       animationDuration: Number,
+  
       itemAnimationDelay: Number,
+  
       icon: String,
+  
       showItem: Boolean,
+  
       isOpen: Boolean,
+  
       total: Number,
-      currentIndex: Number
+  
+      currentIndex: Number,
+      link:String
+  
     },
-    data () {
+  
+    data() {
+  
       return {
+  
         styleArr: [],
+  
         itemExpandAnimationStyle: {
+  
           animationName: 'expand-item-' + this.index,
+  
           animationFillMode: 'forwards',
+  
           animationDuration: +this.animationDuration + 's',
+  
           animationDelay: this.itemAnimationDelay + 's',
+  
           animationTimingFunction: 'ease-in'
+  
         },
+  
         animationEndCount: 0,
+  
         itemContractAnimationStyle: {
+  
           animationName: 'contract-item-' + this.index,
+  
           animationFillMode: 'backwards',
+  
           animationDuration: +this.animationDuration + 's',
+  
           animationDelay: this.itemAnimationDelay + 's',
+  
           animationTimingFunction: 'ease-out'
+  
         }
+  
       }
-
+  
+  
+  
     },
-
+  
+  
+  
     computed: {
-      x () {
+  
+      x() {
         return this.radius * Math.cos(this.toRadians(this.angleCur))
+  
       },
-      y () {
+  
+      y() {
+  
         return this.radius * Math.sin(this.toRadians(this.angleCur))
+  
       },
-      x0 () {
+  
+      x0() {
+  
+        return 0 //最原始位置，3点方向为0，顺时针方向递增
+  
+      },
+  
+      y0() {
+  
         return 0
+  
       },
-      y0 () {
-        return 0
+  
+      x2() {
+  
+        return Number((this.x).toFixed(2)) //menu打开后的最后的位置
+  
       },
-      x2 () {
-        return Number((this.x).toFixed(2))
-      },
-      y2 () {
+  
+      y2() {
+  
         return Number((this.y).toFixed(2))
+  
       },
-      x1 () {
-        return this.x2 * 1.2
+  
+      x1() {
+  
+        return this.x2 * 1.2 //最远的位置，形成拉回效果
+  
       },
-      y1 () {
+  
+      y1() {
+  
         return this.y2 * 1.2
+  
       },
-      animation () {
+  
+      animation() {
+  
         if (this.isOpen) {
-
+  
+  
+  
         } else {
+  
           return this.generateAminate()
+  
         }
+  
       }
+  
     },
+  
     watch: {
-      isOpen: function () {
+  
+      isOpen: function() {
+  
         if (this.isOpen) {
+  
           try {
+  
             this.styleArr.pop()
+  
           } catch (e) {
+  
             console.log(e)
+  
           }
+  
           this.styleArr.push(this.itemExpandAnimationStyle)
+  
         } else {
+  
           this.styleArr.pop()
+  
           this.styleArr.push(this.itemContractAnimationStyle)
+  
         }
-
+  
+  
+  
       }
+  
     },
-
-    mounted () {
+  
+  
+  
+    mounted() {
+  
       this.insertStyleSheet()
+  
     },
+  
     methods: {
+  
       animationEnd() {
+  
         this.$emit('animationCountIncrease')
+  
       },
-      changeShowItem () {
+  
+      changeShowItem() {
+  
         this.$emit('showItemChange', this.index)
+
       },
-      toRadians (angle) {
+  
+      toRadians(angle) {
+  
         return angle * (Math.PI / 180)
+  
       },
-      generateBaseKeyFrame (stage) {
+  
+      generateBaseKeyFrame(stage) {
+  
         let str = ''
-        if (stage === 'expand-item-') {
+  
+        if (stage === 'expand-item-') { //展开动画
+  
           str = stage + this.index + '{' +
+  
             '0% {' +
+  
             'transform: translate(' + this.x0 + 'px,' + this.y0 + 'px)' +
+  
             '}' +
+  
             '70% {' +
+  
             'transform: translate(' + this.x1 + 'px,' + this.y1 + 'px)' +
+  
             '}' +
+  
             '100% {' +
+  
             'transform: translate(' + this.x2 + 'px,' + this.y2 + 'px)' +
+  
             '}' +
+  
             '}\n'
+  
         } else {
-          str = stage + this.index + '{' +
+  
+          str = stage + this.index + '{' + //收缩动画
+  
             '100% {' +
+  
             'transform: translate(' + this.x0 + 'px,' + this.y0 + 'px)' +
+  
             '}' +
+  
             '0% {' +
+  
             'transform: translate(' + this.x2 + 'px,' + this.y2 + 'px)' +
+  
             '}' +
+  
             '}\n'
+  
         }
+  
         return '@keyframes ' + str + '@-webkit-keyframes   ' + str
-
+  
+  
+  
       },
-      genetateAnimateDetail () {
-
+  
+      genetateAnimateDetail() {
+  
+  
+  
         let str = '.item-active {' +
+  
           'animation-name: ' + 'expand-item-' + this.index + ';' +
+  
           'animation-fill-mode: forwards;' +
+  
           'animation-duration: 0.7s;' +
+  
           'animation-timing-function: ease-out'
+  
         '}\n'
+  
         return str
+  
       },
-      insertStyleSheet () {
+  
+      insertStyleSheet() {
+  
         let cssRule = this.generateBaseKeyFrame('expand-item-')
+  
         cssRule += this.generateBaseKeyFrame('contract-item-')
+  
         cssRule += this.genetateAnimateDetail()
+  
         let style = document.createElement('style')
+  
         style.type = 'text/css'
+  
         style.innerHTML = cssRule
+  
         document.head.appendChild(style)
-
+  
+  
+  
       }
+  
     }
-
+  
+  
+  
   }
 </script>
 

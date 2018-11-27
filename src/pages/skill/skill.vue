@@ -1,9 +1,11 @@
 <template>
   <div class="skills">
-    This is skills page
     <topSlide></topSlide>
-    <skillbar></skillbar>
-     <skillsMobileMenu></skillsMobileMenu>
+    <!-- <skillbar></skillbar> -->
+    <skillsMobileMenu></skillsMobileMenu>
+    <cssSkill></cssSkill>
+    <courseHighlight></courseHighlight>
+    <skillFooter></skillFooter>
   </div>
 
 </template>
@@ -12,7 +14,10 @@
 
   import skillsMobileMenu from '../../common/navigationBar/mobileMenu'
   import skillbar from './components/skillbar'
-  import topSlide from './components/topSlide'
+  import topSlide from './components/topBanner'
+  import cssSkill from './components/cssSkill'
+  import courseHighlight from './components/courseHighlight'
+  import skillFooter from '../../common/footer/footer'
 
     
   export default {
@@ -20,7 +25,10 @@
     components: {
       skillsMobileMenu,
       skillbar,
-      topSlide
+      topSlide,
+      cssSkill,
+      courseHighlight,
+      skillFooter
     },
     data() {
       return {}

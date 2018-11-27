@@ -90,8 +90,11 @@
       padding-left: 15px
       margin-right: auto
       margin-left: auto
+      height: 2rem;
+      overflow: hidden;
       .item-img
         width: 100%
+        border 2px solid #ccc
         -webkit-border-radius: 10px
         -moz-border-radius: 10px
         border-radius: 10px

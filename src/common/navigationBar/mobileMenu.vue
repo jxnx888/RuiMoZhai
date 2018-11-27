@@ -68,6 +68,7 @@
 
 <style scoped lang="stylus">
   .mobileMenu
+    z-index 9999999999
     .mobileMenu-position
       position: fixed
       bottom: 1.7rem

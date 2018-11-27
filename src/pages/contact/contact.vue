@@ -5,7 +5,7 @@
     <contactMap></contactMap>
     <contactMobileMenu></contactMobileMenu>
     <!-- <contactSwiper :list="contactSwiperList"></contactSwiper> -->
-   
+   <contactFooter></contactFooter>
   </div>
 
 </template>
@@ -17,6 +17,7 @@
   import contactMap from './components/Map'
   import contactTopBanner from './components/topBanner'
   import contactWays from './components/contactWays'
+  import contactFooter from '../../common/footer/footer'
 
 
   import axios from 'axios'
@@ -25,6 +26,7 @@
     name: "Contact",
     components: {
       contactMobileMenu,
+      contactFooter,
       contactSwiper,
       contactMap,
       contactTopBanner,

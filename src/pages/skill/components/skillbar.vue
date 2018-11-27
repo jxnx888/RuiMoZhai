@@ -1,10 +1,10 @@
 <template>
     <div class="skillbar "> 
-       
+       <h2 class="text-center">Technical Skills</h2>
             <ul >    
                 <li v-for="skill in skills">    
                     <div class="bar" v-bind:style={width:skill.perc}></div>    
-                    <span>{{skill.name}} {{skill.perc}}</span>   
+                    <span>{{skill.name}}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{skill.perc}}</span>   
     
                 </li>    
             </ul>    
@@ -23,31 +23,37 @@ export default {
       skills: [
         {
           name: "HTML5",
-          perc: "95%"
+          perc: "95%",
+          color:green
         },
 
         {
           name: "CSS3",
-          perc: "90%"
+          perc: "90%",
+          color: pink
         },
 
         {
           name: "JavaScript",
-          perc: "70%"
+          perc: "70%",
+          color: yellow
         },
 
         {
           name: "ASP.NET Webform / C#",
-          perc: "75%"
+          perc: "75%",
+          color: blue
         },
 
         {
           name: "JavaScript",
-          perc: "80%"
+          perc: "80%",
+          color: oriange
         },
          {
           name: "MySQL",
-          perc: "50%"
+          perc: "50%",
+          color: black
         },
 
       ]
@@ -60,7 +66,13 @@ export default {
 
 <style scoped lang="stylus">
 .skillbar 
-    background-color: #eee
+    margin-top .2rem
+    background-color: #fff
+    h2
+      height 1rem
+      line-height 1rem
+      font-size .4rem
+      text-shadow: 2px 2px 0 #6db6e0
     ul        
         list-style: none
         li   
@@ -87,6 +99,6 @@ export default {
                 left:0
                 height:100%
                 background: url('../../../images/skillBumblebee.gif')
-                opacity 0.7
+                /*opacity 0.7*/
     
 </style>

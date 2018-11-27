@@ -11,6 +11,7 @@
       <homeProjects :list="projectsList"></homeProjects>
       <!--<homeNav></homeNav> -->
       <homeMobileMenu></homeMobileMenu>
+      <homeFooter></homeFooter>
     </div>
     <homeScrollTop></homeScrollTop>
     <!--<router-link to="/Me">我的账户</router-link>-->
@@ -29,6 +30,7 @@
   import homeMobileMenu from '../../common/navigationBar/mobileMenu'
   import homeTypeWrite from './components/typeWrite'
   import homeScrollTop from '../../common/scrollTop/scrollTop'
+  import homeFooter from '../../common/footer/footer'
 
  
   export default {
@@ -41,6 +43,7 @@
       homeProjects,
       homeCountDown,
       homeMobileMenu,
+      homeFooter,
       homeTypeWrite,
       homeScrollTop
 

@@ -7,6 +7,7 @@
           :key="index"
         >
           <img class="gallary-img" :src="item"/>
+          <!-- <p>{{index}}</p> -->
         </swiper-slide>
         <div class="swiper-pagination" slot="pagination"></div>
       </swiper>

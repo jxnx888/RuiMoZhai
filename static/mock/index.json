@@ -83,20 +83,28 @@
     }],
     "projectsList": [{
       "id": "0001",
-      "checkView":"checkView(0)",
-      "imgUrl": "https://github.com/jxnx888/XinNing_PersonalWebSite/blob/master/XinNing/Images/Craig.png?raw=true"
+      "imgUrl": "https://github.com/jxnx888/XinNing_PersonalWebSite/blob/master/XinNing/Images/Craig.png?raw=true",
+      "screenshots":["https://github.com/jxnx888/XinNing_PersonalWebSite/blob/master/XinNing/Images/Current.png?raw=true",
+                    "https://github.com/jxnx888/XinNing_PersonalWebSite/blob/master/XinNing/Images/YMCA.png?raw=true",
+                   "https://github.com/jxnx888/XinNing_PersonalWebSite/blob/master/XinNing/Images/StoveTrap.png?raw=true"]
     }, {
       "id": "0002",
-      "checkView":"checkView(1)",
-      "imgUrl": "https://github.com/jxnx888/XinNing_PersonalWebSite/blob/master/XinNing/Images/Current.png?raw=true"
+      "imgUrl": "https://github.com/jxnx888/XinNing_PersonalWebSite/blob/master/XinNing/Images/Current.png?raw=true",
+      "screenshots":["https://github.com/jxnx888/XinNing_PersonalWebSite/blob/master/XinNing/Images/Current.png?raw=true",
+        "https://github.com/jxnx888/XinNing_PersonalWebSite/blob/master/XinNing/Images/Current.png?raw=true",
+       "https://github.com/jxnx888/XinNing_PersonalWebSite/blob/master/XinNing/Images/Current.png?raw=true"]
     }, {
       "id": "0003",
-      "checkView":"checkView(2)",
-      "imgUrl": "https://github.com/jxnx888/XinNing_PersonalWebSite/blob/master/XinNing/Images/YMCA.png?raw=true"
+      "imgUrl": "https://github.com/jxnx888/XinNing_PersonalWebSite/blob/master/XinNing/Images/YMCA.png?raw=true",
+      "screenshots":["https://github.com/jxnx888/XinNing_PersonalWebSite/blob/master/XinNing/Images/YMCA.png?raw=true",
+        "https://github.com/jxnx888/XinNing_PersonalWebSite/blob/master/XinNing/Images/YMCA.png?raw=true",
+       "https://github.com/jxnx888/XinNing_PersonalWebSite/blob/master/XinNing/Images/YMCA.png?raw=true"]
     }, {
       "id": "0004",
-      "checkView":"checkView(3)",
-      "imgUrl": "https://github.com/jxnx888/XinNing_PersonalWebSite/blob/master/XinNing/Images/StoveTrap.png?raw=true"
+      "imgUrl": "https://github.com/jxnx888/XinNing_PersonalWebSite/blob/master/XinNing/Images/StoveTrap.png?raw=true",
+      "screenshots":["https://github.com/jxnx888/XinNing_PersonalWebSite/blob/master/XinNing/Images/Current.png?raw=true",
+        "https://github.com/jxnx888/XinNing_PersonalWebSite/blob/master/XinNing/Images/YMCA.png?raw=true",
+       "https://github.com/jxnx888/XinNing_PersonalWebSite/blob/master/XinNing/Images/StoveTrap.png?raw=true"]
     }],
     "typeList": [{
       "id": "0001",

@@ -17,7 +17,7 @@
   import topSlide from './components/topBanner'
   import cssSkill from './components/cssSkill'
   import courseHighlight from './components/courseHighlight'
-  import skillFooter from '../../common/footer/footer'
+  import skillFooter from '../../common/footer/footerBar'
 
     
   export default {

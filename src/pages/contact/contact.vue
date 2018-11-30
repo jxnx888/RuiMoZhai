@@ -17,7 +17,7 @@
   import contactMap from './components/Map'
   import contactTopBanner from './components/topBanner'
   import contactWays from './components/contactWays'
-  import contactFooter from '../../common/footer/footer'
+  import contactFooter from '../../common/footer/footerBar'
 
 
   import axios from 'axios'

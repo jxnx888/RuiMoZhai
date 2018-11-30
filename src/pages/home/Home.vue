@@ -1,6 +1,5 @@
 <template>
   <div class="home">
-     <!--<homeCountDown :list="recommendList"></homeCountDown>-->
     <homeSwiper :list="swiperList"></homeSwiper>
    
     <homeTypeWrite></homeTypeWrite>
@@ -30,7 +29,7 @@
   import homeMobileMenu from '../../common/navigationBar/mobileMenu'
   import homeTypeWrite from './components/typeWrite'
   import homeScrollTop from '../../common/scrollTop/scrollTop'
-  import homeFooter from '../../common/footer/footer'
+  import homeFooter from '../../common/footer/footerBar'
 
  
   export default {

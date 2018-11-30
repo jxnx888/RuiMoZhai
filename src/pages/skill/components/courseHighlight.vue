@@ -24,7 +24,7 @@
 
 <script>
 export default {
-  name: "Course Highlight",
+  name: "CourseHighlight",
 
   components: {},
 

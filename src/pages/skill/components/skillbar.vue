@@ -2,7 +2,7 @@
     <div class="skillbar "> 
        <h2 class="text-center">Technical Skills</h2>
             <ul >    
-                <li v-for="skill in skills">    
+                <li v-for="(skill, index) in skills"  :key="index">    
                     <div class="bar" v-bind:style={width:skill.perc}></div>    
                     <span>{{skill.name}}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{skill.perc}}</span>   
     

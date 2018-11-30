@@ -321,12 +321,12 @@
     top: 0.1rem
     left: 0.1rem
     transition transform .28s cubic-bezier(.4, 0, .2, 1), box-shadow .28s cubic-bezier(.4, 0, .2, 1), opacity .28s cubic-bezier(.4, 0, .2, 1)
-    width 1.3rem
-    height 1.3rem
+    width .8rem
+    height .8rem
     border-radius 50%
     .item-wrapper
-      width 65%
-      height 65%
+      width 100%
+      height 100%
       background linear-gradient(#cdf5ff, #4e95ff);
       border-radius 50%
 

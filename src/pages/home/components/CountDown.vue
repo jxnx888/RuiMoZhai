@@ -4,13 +4,13 @@
       v-on:start_callback="countDownS_cb(parseInt(id))"
       :startTime="parseInt(startTime)"
       :endTime="parseInt(startTime)"
-      :tipText="'后发布'"
-      :tipTextEnd="'离结束文字1'"
-      :endText="'已结束'"
-      :dayTxt="'天'"
-      :hourTxt="'小时'"
-      :minutesTxt="'分钟'"
-      :secondsTxt="'秒'">
+      :tipText="'Post'"
+      :tipTextEnd="''"
+      :endText="''"
+      :dayTxt="'D'"
+      :hourTxt="':'"
+      :minutesTxt="':'"
+      :secondsTxt="''">
     </count-down>
   </div>
 </template>

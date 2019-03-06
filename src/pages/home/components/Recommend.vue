@@ -24,7 +24,7 @@
       </router-link>
 
     </ul>
-    <router-link to="/classList">
+    <router-link to="/classList" class="more">
     <div class="more">
       <span class="iconfont" >&#xe6ba;查看更多</span>
     </div>

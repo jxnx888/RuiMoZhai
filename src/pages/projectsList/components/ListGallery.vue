@@ -6,13 +6,13 @@
         >
 
       <div class="item">         
-          <img class="item-img " :src="item.imgUrl" @click="handleGalleryClick">  
+          <img class="item-img " :src="item.imgUrl" @click="handleProjectGalleryClick">  
                
       </div>
 
       <div class="swiperContainer"  
         v-show="showGallery"
-        @close="handleGalleryClose">
+        @close="handleProjectGalleryClose">
         <div class="swiperWrapper"  >
             <swiper :options="swiperOptions">
               <swiper-slide
@@ -53,10 +53,10 @@ export default {
   },
   methods: {
     
-    handleGalleryClick() {
+    handleProjectGalleryClick() {
       this.showGallery= true;
     },
-    handleGalleryClose() {
+    handleProjectGalleryClose() {
       this.showGallery = false;
     }
   }

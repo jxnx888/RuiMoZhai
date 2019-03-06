@@ -3,39 +3,28 @@
     <div class="searchDetail-top">
       <div class="wrapper">
         <span class="iconfont ">&#xe6e4;</span>
-        <input class="searchDetail-input" placeholder="书体、碑帖、课程名称或导师名称"/>
+        <input class="searchDetail-input" placeholder="搜索关键词（JavaScript，Exchang）"/>
       </div>
     </div>
     <div class="searchDetail-teacher">
       <div class="searchDetail-teacher-top">
-        热门导师
+        热门搜索
       </div>
       <div class="searchDetail-teacher-bottom">
-        <button class="btn" onclick="xingzuo_search()">宁保成</button>
-        <button class="btn" onclick="qinggan_search()">保成</button>
-        <button class="btn " onclick="xinli_search()">保成</button>
-        <button class="btn " onclick="xingge_search()">宁保成</button>
-        <button class="btn " onclick="aiqing_search()">宁保成</button>
-        <button class="btn " onclick="aiqing_search()">保成</button>
-        <button class="btn " onclick="aiqing_search()">宁保成</button>
-        <button class="btn " onclick="aiqing_search()">宁保成</button>
-        <button class="btn " onclick="aiqing_search()">宁保成</button>
+        <button class="btn" onclick="xingzuo_search()">JavaScript</button>
+        <button class="btn" onclick="qinggan_search()">JavaScript 闭包</button>
+        <button class="btn " onclick="xinli_search()">Exchange</button>
+       
       </div>
     </div>
     <div class="searchDetail-beitie">
       <div class="searchDetail-teacher-top">
-        热门碑帖
+        热门博客
       </div>
       <div class="searchDetail-teacher-bottom">
-        <button class="btn" onclick="xingzuo_search()">书谱</button>
-        <button class="btn" onclick="qinggan_search()">十七帖</button>
-        <button class="btn " onclick="xinli_search()">张迁碑</button>
-        <button class="btn " onclick="xingge_search()">礼器碑</button>
-        <button class="btn " onclick="aiqing_search()">曹全碑</button>
-        <button class="btn " onclick="aiqing_search()">兰亭序</button>
-        <button class="btn " onclick="aiqing_search()">集王圣教序</button>
-        <button class="btn " onclick="aiqing_search()">寒食帖</button>
-        <button class="btn " onclick="aiqing_search()">前后赤壁赋</button>
+        <button class="btn" onclick="xingzuo_search()">JavaScript Array 操作</button>
+        <button class="btn" onclick="qinggan_search()">JavaScript 综合运算 （数字运算符+比较运算符+逻辑运算符）鑫仔Alan 2018-12-11 13:20 阅读:6 评论:0
+</button>
       </div>
     </div>
     <router-link to="/" class="searchDetail-close">
@@ -99,6 +88,7 @@
         color:#848484
         margin:5px
         padding:0 5px
+        font-size: .3rem
   .searchDetail-close
     display: block;
     text-align: center

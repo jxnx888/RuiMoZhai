@@ -3,13 +3,22 @@
   "data": {
     "swiperList": [{
       "id": "0001",
-      "imgUrl":"http://ning-xin.com/Images/image1/1.jpg"
+      "imgUrl":"https://github.com/jxnx888/my-project-vue/blob/ChangeToPersonalWebsite/src/images/HomeSwiper/1.jpg?raw=true"
     },{
       "id": "0002",
-      "imgUrl": "http://ning-xin.com/Images/image1/2.jpg"
+      "imgUrl": "https://github.com/jxnx888/my-project-vue/blob/ChangeToPersonalWebsite/src/images/HomeSwiper/2.jpg?raw=true"
     },{
       "id": "0003",
-      "imgUrl": "http://ning-xin.com/Images/image1/3.jpg"
+      "imgUrl": "https://github.com/jxnx888/my-project-vue/blob/ChangeToPersonalWebsite/src/images/HomeSwiper/3.jpg?raw=true"
+    },{
+      "id": "0004",
+      "imgUrl": "https://github.com/jxnx888/my-project-vue/blob/ChangeToPersonalWebsite/src/images/HomeSwiper/4.jpg?raw=true"
+    },{
+      "id": "0005",
+      "imgUrl": "https://github.com/jxnx888/my-project-vue/blob/ChangeToPersonalWebsite/src/images/HomeSwiper/5.jpg?raw=true"
+    },{
+      "id": "0006",
+      "imgUrl": "https://github.com/jxnx888/my-project-vue/blob/ChangeToPersonalWebsite/src/images/HomeSwiper/6.jpg?raw=true"
     }],
     "contactSwiperList": [{
       "id": "0001",

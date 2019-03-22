@@ -1,8 +1,8 @@
 <template>
      <div class="wrapper">
        <!-- https://dafrok.github.io/vue-baidu-map/#/ -->
-      <baidu-map class="map" :center="{lng: 121.457298, lat: 31.026942}" :zoom="17">
-        <bm-marker :position="{lng: 121.457298, lat: 31.026942}" :dragging="true" animation="BMAP_ANIMATION_BOUNCE">
+      <baidu-map class="map" :center="{lng: 121.456973, lat: 31.025154}" :zoom="17">
+        <bm-marker :position="{lng: 121.456973, lat: 31.025154}" :dragging="true" animation="BMAP_ANIMATION_BOUNCE">
             <bm-label content="I'm working here!" :labelStyle="{color: 'red', fontSize : '16px'}" :offset="{width: -50, height: 50}"/>
         </bm-marker>
          

@@ -40,7 +40,7 @@ TxtType.prototype.tick = function () {
 };
 
 window.onload = function () {
-    var elements = document.getElementsByClassName('typewrite');
+    var elements = document.getElementsByClassName('typewrite-word');
     for (var i = 0; i < elements.length; i++) {
         var toRotate = elements[i].getAttribute('data-type');
         var period = elements[i].getAttribute('data-period');
@@ -51,6 +51,6 @@ window.onload = function () {
     // INJECT CSS
     var css = document.createElement("style");
     css.type = "text/css";
-    css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
+    css.innerHTML = ".typewrite-word > .wrap { border-right: 0.08em solid #fff}";
     document.body.appendChild(css);
 };

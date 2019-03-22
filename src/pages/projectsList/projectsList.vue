@@ -1,6 +1,5 @@
 <template>
   <div class="projects">
-    This is projects page
      <projectsMobileMenu></projectsMobileMenu>
      <projectListGallery :list="projectsList"></projectListGallery>
   </div>

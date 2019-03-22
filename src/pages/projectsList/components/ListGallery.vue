@@ -6,23 +6,15 @@
         >
 
       <div class="item">         
-          <img class="item-img " :src="item.imgUrl" @click="handleProjectGalleryClick">  
+          <img class="item-img " :src="item.imgUrl" @click="handleGalleryClick(item.id)">
                
       </div>
 
-      <div class="swiperContainer"  
-        v-show="showGallery"
-        @close="handleProjectGalleryClose">
-        <div class="swiperWrapper"  >
-            <swiper :options="swiperOptions">
-              <swiper-slide
-                v-for="(swiperItem, index) in item.screenshots"  :key="index">
-                <img class="gallary-img" :src="swiperItem"/>
-              </swiper-slide>
-              <div class="swiper-pagination" slot="pagination"></div>
-            </swiper>
-        </div>
-      </div>
+     <CommonGallery
+       :imgs="item.screenshots"
+       v-show="showGallery.includes(item.id)"
+       @close="handleGalleryClose(item.id)"
+     ></CommonGallery>
 
     </div>   
   </div>
@@ -41,24 +33,19 @@ export default {
   },
   data() {
     return {
-      showGallery: false,
-      swiperOptions: {
-          pagination: '.swiper-pagination',
-          paginationType: 'fraction',
-          observeParents: true,
-          observer: true,
-          loop: true
-        }
+      showGallery: [],
+
     };
   },
   methods: {
-    
-    handleProjectGalleryClick() {
-      this.showGallery= true;
+
+    handleGalleryClick(id) {
+      this.showGallery.push(id);
     },
-    handleProjectGalleryClose() {
-      this.showGallery = false;
-    }
+    handleGalleryClose(id) {
+      const index = this.showGallery.indexOf(id);
+      this.showGallery.splice(index, 1);
+    },
   }
 };
 </script>

@@ -1,8 +1,8 @@
 <template>
   <div class="recommend">
     <div class="title">博客: JavaScript 学习, 正在进行中>></div>
-  <div class="container">
-  
+  <div>
+    <homeRolling></homeRolling>
     <ul>
       <router-link
         tag="li"
@@ -11,18 +11,25 @@
         :key="item.id"
         :to="'/Class/'+item.id"
       >
-        <div class="item-img-wrapper">
-          <!--<img class="item-img" src="" >-->
-          <div class="item-startTime">
-            <homeCountDown :startTime="item.startTime" :id="item.id"></homeCountDown>
-          </div>
-        </div>
-        <div class=item-info>
-          <p class="item-title">{{item.title}}</p>
-          <p class="item-desc">{{item.desc}}</p>
-        </div>
+        <b-container class="bv-example-row">
+          <b-row>
+            <b-col cols="3">
+              <div class="item-img-wrapper">
+                <!--<img class="item-img" src="" >-->
+                <div class="item-startTime">
+                  <homeCountDown :startTime="item.startTime" :id="item.id"></homeCountDown>
+                </div>
+              </div>
+            </b-col>
+            <b-col cols="9">
+              <div class="item-info">
+                <p class="item-title">{{item.title}}</p>
+                <p class="item-desc">{{item.desc}}</p>
+              </div>
+            </b-col>
+          </b-row>
+        </b-container>
       </router-link>
-
     </ul>
     <router-link to="/classList" class="more">
     <div class="more">
@@ -35,6 +42,7 @@
 
 <script>
   import homeCountDown from './CountDown'
+  import homeRolling from '../../../common/rolling_background/rolling'
 
   export default {
     name: "homeRecommend",
@@ -42,7 +50,8 @@
       list: Array,
     },
     components: {
-      homeCountDown
+      homeCountDown,
+      homeRolling
     }
 
   }
@@ -80,9 +89,15 @@
         line-height: .4rem
         height: .9rem
         font-size: .32rem
+        white-space: nowrap
+        overflow: hidden
+        text-overflow: ellipsis
       .item-desc
         line-height: .4rem
         color: #8e8c8c
+        white-space: nowrap
+        overflow: hidden
+        text-overflow: ellipsis
     .more
       text-align: center
       margin-top: .25rem

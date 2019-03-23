@@ -92,25 +92,25 @@
     }],
     "projectsList": [{
       "id": "0001",
-      "imgUrl": "https://github.com/jxnx888/XinNing_PersonalWebSite/blob/master/XinNing/Images/Craig.png?raw=true",
-      "screenshots":["https://github.com/jxnx888/XinNing_PersonalWebSite/blob/master/XinNing/Images/Craig.png?raw=true",
-                    "https://github.com/jxnx888/XinNing_PersonalWebSite/blob/master/XinNing/Images/Craig.png?raw=true",
-                   "https://github.com/jxnx888/XinNing_PersonalWebSite/blob/master/XinNing/Images/Craig.png?raw=true"]
+      "url": "https://specialneedslifeservices.com/",
+      "screenshots":["/static/img/Projects/Crig_1.jpg",
+                    "/static/img/Projects/Crig_2.jpg",
+                   "/static/img/Projects/Crig_3.jpg"]
     }, {
       "id": "0002",
-      "imgUrl": "https://github.com/jxnx888/XinNing_PersonalWebSite/blob/master/XinNing/Images/Current.png?raw=true",
+      "url": "https://currentcomposites.com/",
       "screenshots":["https://github.com/jxnx888/XinNing_PersonalWebSite/blob/master/XinNing/Images/Current.png?raw=true",
         "https://github.com/jxnx888/XinNing_PersonalWebSite/blob/master/XinNing/Images/Current.png?raw=true",
        "https://github.com/jxnx888/XinNing_PersonalWebSite/blob/master/XinNing/Images/Current.png?raw=true"]
     }, {
       "id": "0003",
-      "imgUrl": "https://github.com/jxnx888/XinNing_PersonalWebSite/blob/master/XinNing/Images/YMCA.png?raw=true",
+      "imgUrl": "https://www.regionalymca.org/",
       "screenshots":["https://github.com/jxnx888/XinNing_PersonalWebSite/blob/master/XinNing/Images/YMCA.png?raw=true",
         "https://github.com/jxnx888/XinNing_PersonalWebSite/blob/master/XinNing/Images/YMCA.png?raw=true",
        "https://github.com/jxnx888/XinNing_PersonalWebSite/blob/master/XinNing/Images/YMCA.png?raw=true"]
     }, {
       "id": "0004",
-      "imgUrl": "https://github.com/jxnx888/XinNing_PersonalWebSite/blob/master/XinNing/Images/StoveTrap.png?raw=true",
+      "imgUrl": "https://stovetarp.com/",
       "screenshots":["https://github.com/jxnx888/XinNing_PersonalWebSite/blob/master/XinNing/Images/Current.png?raw=true",
         "https://github.com/jxnx888/XinNing_PersonalWebSite/blob/master/XinNing/Images/YMCA.png?raw=true",
        "https://github.com/jxnx888/XinNing_PersonalWebSite/blob/master/XinNing/Images/StoveTrap.png?raw=true"]

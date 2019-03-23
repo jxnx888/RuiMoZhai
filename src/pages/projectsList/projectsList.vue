@@ -1,5 +1,6 @@
 <template>
   <div class="projects">
+    <projectBanner></projectBanner>
      <projectsMobileMenu></projectsMobileMenu>
      <projectListGallery :list="projectsList"></projectListGallery>
   </div>
@@ -10,13 +11,15 @@
 
   import projectsMobileMenu from '../../common/navigationBar/mobileMenu'
   import projectListGallery from './components/ListGallery'
+  import projectBanner from './components/topBanner'
    import axios from 'axios'
 
   export default {
     name: "Projects",
     components: {
       projectsMobileMenu,
-      projectListGallery
+      projectListGallery,
+      projectBanner
     },
     data() {
       return {

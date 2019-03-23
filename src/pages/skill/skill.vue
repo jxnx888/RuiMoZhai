@@ -28,7 +28,7 @@
       topSlide,
       cssSkill,
       courseHighlight,
-      skillFooter
+      skillFooter,
     },
     data() {
       return {}

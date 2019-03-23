@@ -6,7 +6,7 @@
         >
 
       <div class="item">         
-          <img class="item-img " :src="item.imgUrl" @click="handleGalleryClick(item.id)">
+          <img class="item-img " :src="item.screenshots[0]" @click="handleGalleryClick(item.id)">
                
       </div>
 
@@ -53,7 +53,7 @@ export default {
 <style scoped lang="stylus">
 .listGallery 
   background: #fff;
-  margin-top: 0.2rem;
+  /*margin-top: 0.2rem;*/
 
   .title 
     text-indent: 0.2rem;

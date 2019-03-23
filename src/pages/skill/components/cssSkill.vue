@@ -1,8 +1,10 @@
 <template>
     <div class="skillbar "> 
       <div class=" container">
-				<h2 class="text-center">Technical Skills</h2>
-				<div class="col-md-offset-3 col-md-6" v-for="(skill, index) in skills"  :key="index">
+				<!--<h2 class="text-center">Technical Skills</h2>-->
+        <skillHeart  :content="'Technical Skills'"></skillHeart>
+
+        <div class="col-md-offset-3 col-md-6" v-for="(skill, index) in skills"  :key="index">
 					<div class="progress" :class="skill.color">
 						<h3 class="progress-title">{{skill.name}}</h3>
 						<div class="progress-bar"  v-bind:style="{ width: skill.perc, background:skill.color}">
@@ -15,10 +17,15 @@
 </template>
 
 <script>
-export default {
+  import skillHeart from '../../../common/animatedHeart/animatedHeart'
+
+
+  export default {
   name: "skillbar",
 
-  components: {},
+  components: {
+    skillHeart
+  },
 
   data() {
     return {

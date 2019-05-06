@@ -6,8 +6,11 @@
           v-for="(item, index) in imgs"
           :key="index"
         >
+
+          <a class="visit" :href="url">Visit</a>
           <img class="gallary-img" :src="item"/>
           <!-- <p>{{index}}</p> -->
+
         </swiper-slide>
         <div class="swiper-pagination" slot="pagination"></div>
       </swiper>
@@ -24,6 +27,10 @@
         default() {
           return []
         }
+      },
+      url: {
+        type: String,
+        default: ""
       }
     },
     data() {
@@ -64,6 +71,22 @@
       height: 0
       width: 100%
       padding-bottom: 100%
+      .visit
+        display: block;
+        margin: 0 auto;
+        margin-bottom: .1rem;
+        width: 1rem;
+        position: relative;
+        line-height: .4rem;
+        text-align: center;
+        color: #fff;
+      .visit::before
+        content: '';
+        position: absolute;
+        top: 0; right: 0; bottom: 0; left: 0;
+        background-color: #51bfff;
+        transform: skewX(-45deg);
+        z-index: -1;
       .gallary-img
         width: 100%
       .swiper-pagination

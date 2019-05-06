@@ -4,7 +4,7 @@
     <router-link
         tag="li"
         class="item animated col-sm-6"
-        v-for="item of list"
+        v-for="item of filteredItems"
         :key="item.id"
         :to="'/projectsList/'+item.id"
         :class="{'bounceInLeft': scrolled}" 
@@ -14,13 +14,13 @@
 
           <img class="item-img " 
            
-          :src="item.imgUrl">
+          :src="item.screenshots[0]">
            
         </div>
 
     </router-link>
 
-     <router-link to="/projectList">
+     <router-link to="/projects">
     <div class="more">
       <span class="iconfont" >&#xe6ba;查看更多</span>
     </div>
@@ -40,7 +40,15 @@
          scrolled: false
        }
   },
-   methods: {
+
+    computed: {
+      //only show first 4 items
+      filteredItems: function () {
+        return this.list.slice(0, 4)
+      }
+    },
+
+    methods: {
     handleScroll() {
       let obj = document.querySelector('.item');
       let {top,bottom} = obj.getBoundingClientRect();

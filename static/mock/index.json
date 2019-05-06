@@ -90,30 +90,44 @@
       "aboutTeacher":"<p>AAAA，AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA院兰亭书法班成员。</p><p>国展获奖入展情况:</p><p>全国第二届篆书展优秀奖最高奖(中书协)</p><p>首届“西峡颂”全国书法展优秀奖最高奖(中书协)</p><p>全国首届“三苏奖”书法作品展入展(中书协)</p><p>全国首届“陶渊明奖”书法作品展入展(中书协)</p><p>全国首届“廉江红橙奖”书法作品展入展(中书协)</p><p>全国首届“云峰奖”书法作品展入展(中书协)</p><p>全国第二届“平复帖奖”书法作品展入展(中书协)</p><p>全国第三届“四堂杯奖”书法作品展入展(中书协)</p><p>全国第六届“**风度”书法新锐作品展(中书协)</p>"
 
     }],
-    "projectsList": [{
+    "projectsList": [
+      {
       "id": "0001",
-      "url": "https://specialneedslifeservices.com/",
-      "screenshots":["/static/img/Projects/Crig_1.jpg",
-                    "/static/img/Projects/Crig_2.jpg",
-                   "/static/img/Projects/Crig_3.jpg"]
-    }, {
+      "imgUrl": "http://ning-xin.com",
+      "screenshots":["https://github.com/jxnx888/my-project-vue/blob/ChangeToPersonalWebsite/src/images/Projects/me_1.jpg?raw=true",
+        "https://github.com/jxnx888/my-project-vue/blob/ChangeToPersonalWebsite/src/images/Projects/me_2.jpg?raw=true",
+        "https://github.com/jxnx888/my-project-vue/blob/ChangeToPersonalWebsite/src/images/Projects/me_3.jpg?raw=true"]
+    },
+      {
       "id": "0002",
-      "url": "https://currentcomposites.com/",
-      "screenshots":["https://github.com/jxnx888/XinNing_PersonalWebSite/blob/master/XinNing/Images/Current.png?raw=true",
-        "https://github.com/jxnx888/XinNing_PersonalWebSite/blob/master/XinNing/Images/Current.png?raw=true",
-       "https://github.com/jxnx888/XinNing_PersonalWebSite/blob/master/XinNing/Images/Current.png?raw=true"]
+      "url": "https://specialneedslifeservices.com/",
+      "screenshots":["https://github.com/jxnx888/my-project-vue/blob/ChangeToPersonalWebsite/src/images/Projects/Craig_1.jpg?raw=true",
+                    "https://github.com/jxnx888/my-project-vue/blob/ChangeToPersonalWebsite/src/images/Projects/Craig_2.jpg?raw=true",
+                   "https://github.com/jxnx888/my-project-vue/blob/ChangeToPersonalWebsite/src/images/Projects/Craig_3.jpg?raw=true"]
     }, {
       "id": "0003",
-      "imgUrl": "https://www.regionalymca.org/",
-      "screenshots":["https://github.com/jxnx888/XinNing_PersonalWebSite/blob/master/XinNing/Images/YMCA.png?raw=true",
-        "https://github.com/jxnx888/XinNing_PersonalWebSite/blob/master/XinNing/Images/YMCA.png?raw=true",
-       "https://github.com/jxnx888/XinNing_PersonalWebSite/blob/master/XinNing/Images/YMCA.png?raw=true"]
+      "url": "https://currentcomposites.com/",
+      "screenshots":["https://github.com/jxnx888/my-project-vue/blob/ChangeToPersonalWebsite/src/images/Projects/CurrentInc_1.jpg?raw=true",
+        "https://github.com/jxnx888/my-project-vue/blob/ChangeToPersonalWebsite/src/images/Projects/CurrentInc_2.jpg?raw=true",
+       "https://github.com/jxnx888/my-project-vue/blob/ChangeToPersonalWebsite/src/images/Projects/CurrentInc_3.jpg?raw=true"]
     }, {
       "id": "0004",
+      "imgUrl": "https://www.regionalymca.org/",
+      "screenshots":["https://github.com/jxnx888/my-project-vue/blob/ChangeToPersonalWebsite/src/images/Projects/YMCA_1.jpg?raw=true",
+        "https://github.com/jxnx888/my-project-vue/blob/ChangeToPersonalWebsite/src/images/Projects/YMCA_2.jpg?raw=true",
+       "https://github.com/jxnx888/my-project-vue/blob/ChangeToPersonalWebsite/src/images/Projects/YMCA_3.jpg?raw=true"]
+    }, {
+      "id": "0005",
       "imgUrl": "https://stovetarp.com/",
-      "screenshots":["https://github.com/jxnx888/XinNing_PersonalWebSite/blob/master/XinNing/Images/Current.png?raw=true",
-        "https://github.com/jxnx888/XinNing_PersonalWebSite/blob/master/XinNing/Images/YMCA.png?raw=true",
-       "https://github.com/jxnx888/XinNing_PersonalWebSite/blob/master/XinNing/Images/StoveTrap.png?raw=true"]
+      "screenshots":["https://github.com/jxnx888/my-project-vue/blob/ChangeToPersonalWebsite/src/images/Projects/stovetarp_1.jpg?raw=true",
+        "https://github.com/jxnx888/my-project-vue/blob/ChangeToPersonalWebsite/src/images/Projects/stovetarp_2.jpg?raw=true",
+       "https://github.com/jxnx888/my-project-vue/blob/ChangeToPersonalWebsite/src/images/Projects/stovetarp_3.jpg?raw=true"]
+    }, {
+      "id": "0006",
+      "imgUrl": "http://mcq.micequan.cn/Menu.html",
+      "screenshots":["https://github.com/jxnx888/my-project-vue/blob/ChangeToPersonalWebsite/src/images/Projects/mcq_1.jpg?raw=true",
+        "https://github.com/jxnx888/my-project-vue/blob/ChangeToPersonalWebsite/src/images/Projects/mcq_2.jpg?raw=true",
+        "https://github.com/jxnx888/my-project-vue/blob/ChangeToPersonalWebsite/src/images/Projects/mcq_3.jpg?raw=true"]
     }],
     "typeList": [{
       "id": "0001",

@@ -12,6 +12,7 @@
 
      <CommonGallery
        :imgs="item.screenshots"
+       :url="item.url"
        v-show="showGallery.includes(item.id)"
        @close="handleGalleryClose(item.id)"
      ></CommonGallery>

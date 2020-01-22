@@ -1,7 +1,6 @@
 <template>
   <div class="projects">
     <projectBanner></projectBanner>
-     <projectsMobileMenu></projectsMobileMenu>
      <projectListGallery :list="projectsList"></projectListGallery>
   </div>
 
@@ -9,7 +8,6 @@
 
 <script>
 
-  import projectsMobileMenu from '../../common/navigationBar/mobileMenu'
   import projectListGallery from './components/ListGallery'
   import projectBanner from './components/topBanner'
    import axios from 'axios'
@@ -17,7 +15,6 @@
   export default {
     name: "Projects",
     components: {
-      projectsMobileMenu,
       projectListGallery,
       projectBanner
     },
@@ -27,7 +24,7 @@
       }
     },
     methods: {
-      
+
       getHomeInfo() {
         axios.get('/api/index.json')
           .then(this.getHomeInfoSucc)
@@ -44,7 +41,7 @@
     mounted() {
       this.getHomeInfo()
     }
-     
+
   }
 </script>
 

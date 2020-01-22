@@ -6,11 +6,12 @@
         <swiper-slide
           v-for="item of list"
           :key="item.id">
-          <img class="swiper-img" :src="item.imgUrl">
+          <img class="swiper-img swiper-lazy" :src="item.imgUrl">
+          <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
         </swiper-slide>
 
         <!-- Optional controls -->
-        <div class="swiper-pagination" slot="pagination"></div>
+        <div class="swiper-pagination swiper-pagination-bullets" slot="pagination"></div>
         <!--<div class="swiper-button-prev" slot="button-prev"></div>-->
         <!--<div class="swiper-button-next" slot="button-next"></div>-->
         <!--<div class="swiper-scrollbar"   slot="scrollbar"></div>-->
@@ -33,20 +34,20 @@
         swiperOption: {
           pagination: {
             el: '.swiper-pagination',
-            clickable: true
+            clickable: true,
+            type: 'bullets',
           },
           loop: true,
-          autoplay: {
-             delay: 5000,
+          // Disable preloading of all images
+            // Enable lazy loading
+          lazy: true,
+          freeMode: false,
+         /* autoplay: {
+              delay: 2500,
               disableOnInteraction: false
-          },
-          spaceBetween: 30,
-          speed: 5000,
+          },*/
+          // speed: 5000,
           centeredSlides: true,
-          // navigation: {
-          //   nextEl: '.swiper-button-next',
-          //   prevEl: '.swiper-button-prev'
-          // }
         }
       }
     },

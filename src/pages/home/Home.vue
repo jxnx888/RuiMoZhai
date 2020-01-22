@@ -1,15 +1,13 @@
 <template>
   <div class="home">
     <homeSwiper :list="swiperList"></homeSwiper>
-   
+
     <homeTypeWrite></homeTypeWrite>
     <div >
       <homeSearch></homeSearch>
       <homeIconsNav :list="iconList"></homeIconsNav>
       <homeRecommend :list="recommendList"></homeRecommend>
       <homeProjects :list="projectsList"></homeProjects>
-      <!--<homeNav></homeNav> -->
-      <homeMobileMenu></homeMobileMenu>
       <homeFooter></homeFooter>
     </div>
     <homeScrollTop></homeScrollTop>
@@ -26,12 +24,11 @@
   import homeProjects from './components/Projects'
   import axios from 'axios'
   import homeCountDown from './components/CountDown'
-  import homeMobileMenu from '../../common/navigationBar/mobileMenu'
   import homeTypeWrite from './components/typeWrite'
   import homeScrollTop from '../../common/scrollTop/scrollTop'
   import homeFooter from '../../common/footer/footerBar'
 
- 
+
   export default {
     name: "Home",
     components: {
@@ -41,11 +38,9 @@
       homeRecommend,
       homeProjects,
       homeCountDown,
-      homeMobileMenu,
       homeFooter,
       homeTypeWrite,
-      homeScrollTop
-
+      homeScrollTop,
     },
     data() {
       return {
@@ -57,7 +52,7 @@
       }
     },
     methods: {
-      
+
       getHomeInfo() {
         axios.get('/api/index.json')
           .then(this.getHomeInfoSucc)
@@ -77,12 +72,12 @@
     mounted() {
       this.getHomeInfo()
     }
-     
+
   }
 </script>
 
 <style scoped lang="stylus">
   .home
     background-color: #eee
-    
+
 </style>

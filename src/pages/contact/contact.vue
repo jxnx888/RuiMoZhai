@@ -3,7 +3,6 @@
     <contactTopBanner></contactTopBanner>
    <contactWays></contactWays>
     <contactMap></contactMap>
-    <contactMobileMenu></contactMobileMenu>
     <!-- <contactSwiper :list="contactSwiperList"></contactSwiper> -->
    <contactFooter></contactFooter>
   </div>
@@ -12,7 +11,6 @@
 
 <script>
 
-  import contactMobileMenu from '../../common/navigationBar/mobileMenu'
   import contactSwiper from './components/Swiper'
   import contactMap from './components/Map'
   import contactTopBanner from './components/topBanner'
@@ -25,7 +23,6 @@
   export default {
     name: "Contact",
     components: {
-      contactMobileMenu,
       contactFooter,
       contactSwiper,
       contactMap,
@@ -38,7 +35,7 @@
       }
     },
     methods: {
-      
+
       getHomeInfo() {
         axios.get('/api/index.json')
           .then(this.getHomeInfoSucc)
@@ -48,7 +45,7 @@
         if (res.ret && res.data) {
           const data = res.data
           this.contactSwiperList = data.contactSwiperList
-          
+
         }
       }
     },

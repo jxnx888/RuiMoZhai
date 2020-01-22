@@ -1,19 +1,16 @@
 <template>
   <div class="blog">
     This is blog page
-     <blogMobileMenu></blogMobileMenu>
   </div>
 
 </template>
 
 <script>
 
-  import blogMobileMenu from '../../common/navigationBar/mobileMenu'
-    
+
   export default {
     name: "Blog",
     components: {
-      blogMobileMenu
     },
     data() {
       return {}
